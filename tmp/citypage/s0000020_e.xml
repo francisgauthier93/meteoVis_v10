@@ -1,0 +1,459 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+ <siteData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://dd.weather.gc.ca/citypage_weather/schema/site.xsd">
+ <license>http://dd.weather.gc.ca/doc/LICENCE_GENERAL.txt</license>
+ <dateTime name="xmlCreation" zone="UTC" UTCOffset="0">
+ <year>2016</year>
+ <month name="October">10</month>
+ <day name="Friday">14</day>
+ <hour>13</hour>
+ <minute>36</minute>
+ <timeStamp>20161014133600</timeStamp>
+ <textSummary>Friday October 14, 2016 at 13:36 UTC</textSummary>
+ </dateTime>
+ <dateTime name="xmlCreation" zone="ADT" UTCOffset="-3">
+ <year>2016</year>
+ <month name="October">10</month>
+ <day name="Friday">14</day>
+ <hour>10</hour>
+ <minute>36</minute>
+ <timeStamp>20161014103600</timeStamp>
+ <textSummary>Friday October 14, 2016 at 10:36 ADT</textSummary>
+ </dateTime>
+ <location>
+ <continent>North America</continent>
+ <country code="ca">Canada</country>
+ <province code="ns">Nova Scotia</province>
+ <name code="s0000020" lat="45.72N" lon="60.23W">Fourchu Head</name>
+ <region>Richmond County</region>
+ </location>
+ <warnings/>
+ <currentConditions>
+ <station code="" lat="" lon=""/>
+ <dateTime name="observation" zone="UTC" UTCOffset="0"/>
+ <dateTime name="observation" zone="ADT" UTCOffset="-3"/>
+ <condition/>
+ <iconCode format="gif"/>
+ <temperature unitType="metric" units=""/>
+ <dewpoint unitType="metric" units=""/>
+ <pressure unitType="metric" units="" change="" tendency=""/>
+ <visibility unitType="metric" units=""/>
+ <relativeHumidity units=""/>
+ <wind>
+ <speed unitType="metric" units=""/>
+ <gust unitType="metric" units=""/>
+ <direction/>
+ <bearing units="degrees"/>
+ </wind>
+ </currentConditions>
+ <forecastGroup>
+ <dateTime name="forecastIssue" zone="UTC" UTCOffset="0">
+ <year>2016</year>
+ <month name="October">10</month>
+ <day name="Friday">14</day>
+ <hour>14</hour>
+ <minute>00</minute>
+ <timeStamp>20161014140000</timeStamp>
+ <textSummary>Friday October 14, 2016 at 14:00 UTC</textSummary>
+ </dateTime>
+ <dateTime name="forecastIssue" zone="ADT" UTCOffset="-3">
+ <year>2016</year>
+ <month name="October">10</month>
+ <day name="Friday">14</day>
+ <hour>11</hour>
+ <minute>00</minute>
+ <timeStamp>20161014110000</timeStamp>
+ <textSummary>Friday October 14, 2016 at 11:00 ADT</textSummary>
+ </dateTime>
+ <regionalNormals>
+ <textSummary>Low plus 4. High 13.</textSummary>
+ <temperature unitType="metric" units="C" class="high">13</temperature>
+ <temperature unitType="metric" units="C" class="low">4</temperature>
+ </regionalNormals>
+ <forecast>
+ <period textForecastName="Today">Friday</period>
+ <textSummary>Mainly cloudy. 30 percent chance of showers this afternoon. Wind becoming northwest 30 km/h gusting to 50 this afternoon. High 16 with temperature falling to 8 this afternoon. UV index 3 or moderate.</textSummary>
+ <cloudPrecip>
+ <textSummary>Mainly cloudy. 30 percent chance of showers this afternoon.</textSummary>
+ </cloudPrecip>
+ <abbreviatedForecast>
+ <iconCode format="gif">06</iconCode>
+ <pop units="%">30</pop>
+ <textSummary>Chance of showers</textSummary>
+ </abbreviatedForecast>
+ <temperatures>
+ <textSummary>High 16 with temperature falling to 8 this afternoon.</textSummary>
+ <temperature unitType="metric" units="C" class="high">16</temperature>
+ </temperatures>
+ <winds>
+ <textSummary>Wind becoming northwest 30 km/h gusting to 50 this afternoon.</textSummary>
+ <wind index="1" rank="major">
+ <speed unitType="metric" units="km/h">10</speed>
+ <gust unitType="metric" units="km/h">00</gust>
+ <direction>S</direction>
+ <bearing units="degrees">18</bearing>
+ </wind>
+ <wind index="2" rank="major">
+ <speed unitType="metric" units="km/h">30</speed>
+ <gust unitType="metric" units="km/h">50</gust>
+ <direction>NW</direction>
+ <bearing units="degrees">32</bearing>
+ </wind>
+ </winds>
+ <precipitation>
+ <textSummary/>
+ <precipType start="16" end="19">rain</precipType>
+ </precipitation>
+ <uv category="moderate">
+ <index>3</index>
+ <textSummary>UV index 3 or moderate.</textSummary>
+ </uv>
+ <relativeHumidity units="%">85</relativeHumidity>
+ <comfort>
+ <textSummary>becoming cooler.</textSummary>
+ </comfort>
+ </forecast>
+ <forecast>
+ <period textForecastName="Tonight">Friday night</period>
+ <textSummary>Partly cloudy. Wind north 30 km/h gusting to 50. Low 6.</textSummary>
+ <cloudPrecip>
+ <textSummary>Partly cloudy.</textSummary>
+ </cloudPrecip>
+ <abbreviatedForecast>
+ <iconCode format="gif">32</iconCode>
+ <pop units="%"/>
+ <textSummary>Partly cloudy</textSummary>
+ </abbreviatedForecast>
+ <temperatures>
+ <textSummary>Low 6.</textSummary>
+ <temperature unitType="metric" units="C" class="low">6</temperature>
+ </temperatures>
+ <winds>
+ <textSummary>Wind north 30 km/h gusting to 50.</textSummary>
+ <wind index="1" rank="major">
+ <speed unitType="metric" units="km/h">30</speed>
+ <gust unitType="metric" units="km/h">50</gust>
+ <direction>N</direction>
+ <bearing units="degrees">36</bearing>
+ </wind>
+ </winds>
+ <precipitation>
+ <textSummary/>
+ <precipType start="" end=""/>
+ </precipitation>
+ <relativeHumidity units="%">80</relativeHumidity>
+ </forecast>
+ <forecast>
+ <period textForecastName="Saturday">Saturday</period>
+ <textSummary>Clearing in the morning. Wind north 30 km/h gusting to 50 becoming northeast 20 in the afternoon. High 10.</textSummary>
+ <cloudPrecip>
+ <textSummary>Clearing in the morning.</textSummary>
+ </cloudPrecip>
+ <abbreviatedForecast>
+ <iconCode format="gif">05</iconCode>
+ <pop units="%"/>
+ <textSummary>Clearing</textSummary>
+ </abbreviatedForecast>
+ <temperatures>
+ <textSummary>High 10.</textSummary>
+ <temperature unitType="metric" units="C" class="high">10</temperature>
+ </temperatures>
+ <winds>
+ <textSummary>Wind north 30 km/h gusting to 50 becoming northeast 20 in the afternoon.</textSummary>
+ <wind index="1" rank="major">
+ <speed unitType="metric" units="km/h">30</speed>
+ <gust unitType="metric" units="km/h">50</gust>
+ <direction>N</direction>
+ <bearing units="degrees">36</bearing>
+ </wind>
+ <wind index="2" rank="major">
+ <speed unitType="metric" units="km/h">20</speed>
+ <gust unitType="metric" units="km/h">00</gust>
+ <direction>NE</direction>
+ <bearing units="degrees">04</bearing>
+ </wind>
+ </winds>
+ <precipitation>
+ <textSummary/>
+ <precipType start="" end=""/>
+ </precipitation>
+ <relativeHumidity units="%">50</relativeHumidity>
+ </forecast>
+ <forecast>
+ <period textForecastName="Saturday night">Saturday night</period>
+ <textSummary>Clear. Low plus 2.</textSummary>
+ <cloudPrecip>
+ <textSummary>Clear.</textSummary>
+ </cloudPrecip>
+ <abbreviatedForecast>
+ <iconCode format="gif">30</iconCode>
+ <pop units="%"/>
+ <textSummary>Clear</textSummary>
+ </abbreviatedForecast>
+ <temperatures>
+ <textSummary>Low plus 2.</textSummary>
+ <temperature unitType="metric" units="C" class="low">2</temperature>
+ </temperatures>
+ <winds/>
+ <precipitation>
+ <textSummary/>
+ <precipType start="" end=""/>
+ </precipitation>
+ <relativeHumidity units="%">95</relativeHumidity>
+ </forecast>
+ <forecast>
+ <period textForecastName="Sunday">Sunday</period>
+ <textSummary>Sunny. High 12.</textSummary>
+ <cloudPrecip>
+ <textSummary>Sunny.</textSummary>
+ </cloudPrecip>
+ <abbreviatedForecast>
+ <iconCode format="gif">00</iconCode>
+ <pop units="%"/>
+ <textSummary>Sunny</textSummary>
+ </abbreviatedForecast>
+ <temperatures>
+ <textSummary>High 12.</textSummary>
+ <temperature unitType="metric" units="C" class="high">12</temperature>
+ </temperatures>
+ <winds/>
+ <precipitation>
+ <textSummary/>
+ <precipType start="" end=""/>
+ </precipitation>
+ <relativeHumidity units="%">55</relativeHumidity>
+ </forecast>
+ <forecast>
+ <period textForecastName="Sunday night">Sunday night</period>
+ <textSummary>Cloudy periods with 40 percent chance of showers. Low plus 5.</textSummary>
+ <cloudPrecip>
+ <textSummary>Cloudy periods with 40 percent chance of showers.</textSummary>
+ </cloudPrecip>
+ <abbreviatedForecast>
+ <iconCode format="gif">36</iconCode>
+ <pop units="%">40</pop>
+ <textSummary>Chance of showers</textSummary>
+ </abbreviatedForecast>
+ <temperatures>
+ <textSummary>Low plus 5.</textSummary>
+ <temperature unitType="metric" units="C" class="low">5</temperature>
+ </temperatures>
+ <winds/>
+ <precipitation>
+ <textSummary/>
+ <precipType start="72" end="80">rain</precipType>
+ </precipitation>
+ <relativeHumidity units="%">100</relativeHumidity>
+ </forecast>
+ <forecast>
+ <period textForecastName="Monday">Monday</period>
+ <textSummary>Sunny. High 16.</textSummary>
+ <cloudPrecip>
+ <textSummary>Sunny.</textSummary>
+ </cloudPrecip>
+ <abbreviatedForecast>
+ <iconCode format="gif">00</iconCode>
+ <pop units="%"/>
+ <textSummary>Sunny</textSummary>
+ </abbreviatedForecast>
+ <temperatures>
+ <textSummary>High 16.</textSummary>
+ <temperature unitType="metric" units="C" class="high">16</temperature>
+ </temperatures>
+ <winds/>
+ <precipitation>
+ <textSummary/>
+ <precipType start="" end=""/>
+ </precipitation>
+ <relativeHumidity units="%">80</relativeHumidity>
+ </forecast>
+ <forecast>
+ <period textForecastName="Monday night">Monday night</period>
+ <textSummary>Clear. Low plus 4.</textSummary>
+ <cloudPrecip>
+ <textSummary>Clear.</textSummary>
+ </cloudPrecip>
+ <abbreviatedForecast>
+ <iconCode format="gif">30</iconCode>
+ <pop units="%"/>
+ <textSummary>Clear</textSummary>
+ </abbreviatedForecast>
+ <temperatures>
+ <textSummary>Low plus 4.</textSummary>
+ <temperature unitType="metric" units="C" class="low">4</temperature>
+ </temperatures>
+ <winds/>
+ <precipitation>
+ <textSummary/>
+ <precipType start="" end=""/>
+ </precipitation>
+ <relativeHumidity units="%">100</relativeHumidity>
+ </forecast>
+ <forecast>
+ <period textForecastName="Tuesday">Tuesday</period>
+ <textSummary>A mix of sun and cloud. High 11.</textSummary>
+ <cloudPrecip>
+ <textSummary>A mix of sun and cloud.</textSummary>
+ </cloudPrecip>
+ <abbreviatedForecast>
+ <iconCode format="gif">02</iconCode>
+ <pop units="%"/>
+ <textSummary>A mix of sun and cloud</textSummary>
+ </abbreviatedForecast>
+ <temperatures>
+ <textSummary>High 11.</textSummary>
+ <temperature unitType="metric" units="C" class="high">11</temperature>
+ </temperatures>
+ <winds/>
+ <precipitation>
+ <textSummary/>
+ <precipType start="" end=""/>
+ </precipitation>
+ <relativeHumidity units="%">70</relativeHumidity>
+ </forecast>
+ <forecast>
+ <period textForecastName="Tuesday night">Tuesday night</period>
+ <textSummary>Cloudy periods. Low plus 4.</textSummary>
+ <cloudPrecip>
+ <textSummary>Cloudy periods.</textSummary>
+ </cloudPrecip>
+ <abbreviatedForecast>
+ <iconCode format="gif">32</iconCode>
+ <pop units="%"/>
+ <textSummary>Cloudy periods</textSummary>
+ </abbreviatedForecast>
+ <temperatures>
+ <textSummary>Low plus 4.</textSummary>
+ <temperature unitType="metric" units="C" class="low">4</temperature>
+ </temperatures>
+ <winds/>
+ <precipitation>
+ <textSummary/>
+ <precipType start="" end=""/>
+ </precipitation>
+ <relativeHumidity units="%">100</relativeHumidity>
+ </forecast>
+ <forecast>
+ <period textForecastName="Wednesday">Wednesday</period>
+ <textSummary>A mix of sun and cloud. High 12.</textSummary>
+ <cloudPrecip>
+ <textSummary>A mix of sun and cloud.</textSummary>
+ </cloudPrecip>
+ <abbreviatedForecast>
+ <iconCode format="gif">02</iconCode>
+ <pop units="%"/>
+ <textSummary>A mix of sun and cloud</textSummary>
+ </abbreviatedForecast>
+ <temperatures>
+ <textSummary>High 12.</textSummary>
+ <temperature unitType="metric" units="C" class="high">12</temperature>
+ </temperatures>
+ <winds/>
+ <precipitation>
+ <textSummary/>
+ <precipType start="" end=""/>
+ </precipitation>
+ <relativeHumidity units="%">80</relativeHumidity>
+ </forecast>
+ <forecast>
+ <period textForecastName="Wednesday night">Wednesday night</period>
+ <textSummary>Cloudy periods. Low 9.</textSummary>
+ <cloudPrecip>
+ <textSummary>Cloudy periods.</textSummary>
+ </cloudPrecip>
+ <abbreviatedForecast>
+ <iconCode format="gif">32</iconCode>
+ <pop units="%"/>
+ <textSummary>Cloudy periods</textSummary>
+ </abbreviatedForecast>
+ <temperatures>
+ <textSummary>Low 9.</textSummary>
+ <temperature unitType="metric" units="C" class="low">9</temperature>
+ </temperatures>
+ <winds/>
+ <precipitation>
+ <textSummary/>
+ <precipType start="" end=""/>
+ </precipitation>
+ <relativeHumidity units="%">100</relativeHumidity>
+ </forecast>
+ <forecast>
+ <period textForecastName="Thursday">Thursday</period>
+ <textSummary>A mix of sun and cloud. High 15.</textSummary>
+ <cloudPrecip>
+ <textSummary>A mix of sun and cloud.</textSummary>
+ </cloudPrecip>
+ <abbreviatedForecast>
+ <iconCode format="gif">02</iconCode>
+ <pop units="%"/>
+ <textSummary>A mix of sun and cloud</textSummary>
+ </abbreviatedForecast>
+ <temperatures>
+ <textSummary>High 15.</textSummary>
+ <temperature unitType="metric" units="C" class="high">15</temperature>
+ </temperatures>
+ <winds/>
+ <precipitation>
+ <textSummary/>
+ <precipType start="" end=""/>
+ </precipitation>
+ <relativeHumidity units="%">80</relativeHumidity>
+ </forecast>
+ </forecastGroup>
+ <yesterdayConditions>
+ <temperature unitType="metric" units="C" class="high"/>
+ <temperature unitType="metric" units="C" class="low"/>
+ <precip unitType="metric" units="mm"/>
+ </yesterdayConditions>
+ <riseSet>
+ <disclaimer>The information provided here, for the times of the rise and set of the sun, is an estimate included as a convenience to our clients. Values shown here may differ from the official sunrise/sunset data available from (http://hia-iha.nrc-cnrc.gc.ca/sunrise_e.html)</disclaimer>
+ <dateTime name="sunrise" zone="UTC" UTCOffset="0">
+ <year>2016</year>
+ <month name="October">10</month>
+ <day name="Friday">14</day>
+ <hour>10</hour>
+ <minute>16</minute>
+ <timeStamp>20161014101600</timeStamp>
+ <textSummary>Friday October 14, 2016 at 10:16 UTC</textSummary>
+ </dateTime>
+ <dateTime name="sunrise" zone="ADT" UTCOffset="-3">
+ <year>2016</year>
+ <month name="October">10</month>
+ <day name="Friday">14</day>
+ <hour>07</hour>
+ <minute>16</minute>
+ <timeStamp>20161014071600</timeStamp>
+ <textSummary>Friday October 14, 2016 at 07:16 ADT</textSummary>
+ </dateTime>
+ <dateTime name="sunset" zone="UTC" UTCOffset="0">
+ <year>2016</year>
+ <month name="October">10</month>
+ <day name="Friday">14</day>
+ <hour>21</hour>
+ <minute>17</minute>
+ <timeStamp>20161014211700</timeStamp>
+ <textSummary>Friday October 14, 2016 at 21:17 UTC</textSummary>
+ </dateTime>
+ <dateTime name="sunset" zone="ADT" UTCOffset="-3">
+ <year>2016</year>
+ <month name="October">10</month>
+ <day name="Friday">14</day>
+ <hour>18</hour>
+ <minute>17</minute>
+ <timeStamp>20161014181700</timeStamp>
+ <textSummary>Friday October 14, 2016 at 18:17 ADT</textSummary>
+ </dateTime>
+ </riseSet>
+ <almanac>
+ <temperature class="extremeMax" period="" unitType="metric" units="" year=""/>
+ <temperature class="extremeMin" period="" unitType="metric" units="" year=""/>
+ <temperature class="normalMax" unitType="metric" units=""/>
+ <temperature class="normalMin" unitType="metric" units=""/>
+ <temperature class="normalMean" unitType="metric" units=""/>
+ <precipitation class="extremeRainfall" period="" unitType="metric" units="" year=""/>
+ <precipitation class="extremeSnowfall" period="" unitType="metric" units="" year=""/>
+ <precipitation class="extremePrecipitation" period="" unitType="metric" units="" year=""/>
+ <precipitation class="extremeSnowOnGround" period="" unitType="metric" units="" year=""/>
+ <pop units=""/>
+ </almanac>
+ </siteData>
+

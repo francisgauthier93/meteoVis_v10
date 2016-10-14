@@ -1,0 +1,101 @@
+/********************************
+/*	CSS DYNAMIQUE				*
+/********************************/
+/*#vent_fort{
+    color:#FF8000;
+}
+#vent_tfort{
+    color:#F00;
+}*/
+#neige{
+    color:#00C;
+}
+#pluie{
+    color:#00C;
+}
+/*#qteneige{
+    text-decoration:underline;
+}
+#qtepluie{
+    text-decoration:underline;
+}*/
+
+
+/*selon la suggestion de http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-fluid-layout.php*/
+.container-fluid{
+    padding: 10px 0px;
+    margin:0px;
+}
+/*.container-fluid .row{
+    margin:0;
+}
+
+.entete {padding-top:10px;}*/
+.en {}
+.fr {display: none;}
+
+/* ajout des unités après les chiffres des températures */
+.celsius:after{content:" °C";}
+.farenheit:after{content:" °F";}
+
+/*  permettre le scroll du panneau de dessin  */
+.scroll {
+    padding: 10px 0px 20px 0px;
+    overflow:scroll;        
+}
+
+/* formattage des éléments SVG  */
+svg{
+    fill:#FAFAFA;
+    stroke:black;
+    stroke-width:0.5px;
+    cursor: default;
+}
+
+svg#meteo-graphic {
+    border: 1px solid #999;
+}
+
+svg .max-temperature,
+svg .avg-temperature,
+svg .min-temperature,
+svg .temperature,
+svg .accumCond, 
+svg .windCond,
+/*svg .precipCond,*/
+svg .percentPrecipCond,
+svg .cloudCond {
+    cursor: help;
+}
+
+/*
+svg line {
+    stroke:black;
+    stroke-width:2
+}
+svg circle {
+    fill:rgb(65,0,255)
+}
+svg text {
+    fill:black;
+}
+/* formattage du tableau de prévision en format texte */
+/*#forecast td:nth-child(1) 
+{
+    width:15%; 
+    text-transform: capitalize;
+}
+
+#forecast th:nth-child(2),
+#forecast td:nth-child(2),
+#forecast th:nth-child(3),
+#forecast td:nth-child(3)
+{
+    width:10%;
+    text-align: center;
+}
+
+#forecast td:nth-child(4)
+{
+    width:65%;
+}*/

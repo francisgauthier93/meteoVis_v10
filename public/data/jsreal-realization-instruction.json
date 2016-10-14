@@ -1,0 +1,76 @@
+{
+    "fr": {
+        "windCond": {
+            "class": "windCond", 
+            "default": "J(DTR(DT('*|wind-start-date|*'),DT('*|wind-end-date|*')).only('hour').t('nat'),NP(D('de'), N('vent'), N('*|wind-direction|*')).add(VP(V('pouvoir').f('pr'), V('atteindre'), N(*|wind-max-speed|*), P('km/h'))).n('p')).cap(1)"
+        },
+        "max-temperature": {
+            "class": "max-temperature",
+            "default": "NP(N('température'), N('maximum'), C(':'), N(*|temperature-max|*), P('°C')).cap(1)"
+        },
+        "avg-temperature": {
+            "class": "avg-temperature",
+            "default": "NP(N('température'), A('moyen'), C(':'), N(*|temperature-avg|*), P('°C')).cap(1)"
+        },
+        "min-temperature": {
+            "class": "min-temperature",
+            "default": "NP(N('température'), N('minimum'), C(':'), N(*|temperature-min|*), P('°C')).cap(1)"
+        },
+        "temperature": {
+            "class": "temperature",
+            "default": "J(DT('*|temperature-date|*').t('nat').only('hour')).cap(1) + ', il fera *|temperature-value|*°C'"
+        },
+        "accumCond": {
+            "class": "accumCond",
+            "default": "J(DT('*|accumulation-date|*').t('nat').only('day'), Br(), J(N('*|accumulation-type|*'), C(':'), NP(N(*|accumulation-amount|*), PP('cm'))).cap(1), Br(), J(N('Total'), C(':'), NP(N(*|accumulation-total|*), PP('cm')))).cap(1)"
+        },
+        "percentPrecipCond": {
+            "class": "percentPrecipCond",
+            "default": "",
+            "alternative": {
+                "probability-precipitation-value": [
+                        {"min": 0, "max": 49, "text":"J('Faible risque de précipitations')"},
+                        {"min": 50, "max": 79, "text":"J('Possibilité de précipitations')"},
+                        {"min": 80, "max": 89, "text":"J('Précipitations quasi-certaines')"},
+                        {"min": 90, "max": 100, "text":"J('Précipitations soutenues')"}
+                    ]
+            }
+        },
+        "cloudCond": {
+            "class": "cloudCond",
+            "default": "",
+            "alternative": {
+                "cloud-cover-value": [
+                    {"min": 0, "max": 0, "text": "J('Ensoleillé')"},
+                    {"min": 1, "max": 1, "text": "J('Ensoleillé avec passages nuageux')"},
+                    {"min": 2, "max": 3, "text": "J('Alternance de soleil et de nuages')"},
+                    {"min": 4, "max": 6, "text": "J('Partiellement nuageux')"},
+                    {"min": 7, "max": 8, "text": "J('Généralement nuageux')"},
+                    {"min": 9, "max": 9, "text": "J('Très nuageux')"},
+                    {"min": 10, "max": 10, "text": "J('Nuageux')"}
+                ]
+            }
+        }
+    },
+    "en": {
+        "windCond": {
+            "class": "windCond", 
+            "default": ""
+        },
+        "cloudCond": {
+            "class": "cloudCond",
+            "default": "",
+            "alternative": {
+                "cloud-cover-value": [
+                    {"min": 0, "max": 0, "text": "J('Sunny')"},
+                    {"min": 1, "max": 1, "text": "J('Mainly sunny')"},
+                    {"min": 2, "max": 3, "text": "J('A mix of sun and cloud')"},
+                    {"min": 4, "max": 6, "text": "J('Partly cloudy')"},
+                    {"min": 7, "max": 8, "text": "J('Mostly cloudy')"},
+                    {"min": 9, "max": 9, "text": "J('Broken sky')"},
+                    {"min": 10, "max": 10, "text": "J('Cloudy')"}
+                ]
+            }
+        }
+    }
+}

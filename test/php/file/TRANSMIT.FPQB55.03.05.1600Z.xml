@@ -1,0 +1,1374 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<cmml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/apps/scribe-xml/Config/schema/cmml.xsd" version="3.04">
+  <head>
+    <product operational-mode="developmental">
+      <title>FPQB55</title>
+      <field>meteorological</field>
+      <category>forecast</category>
+      <creation-date refresh-frequency="PT4H">2015-03-05T16:20:03Z</creation-date>
+      <current-issue>2015-03-05T16:30:00Z</current-issue>
+      <valid-begin-time>2015-03-07T05:00:00Z</valid-begin-time>
+      <valid-end-time>2015-03-12T05:00:00Z</valid-end-time>
+      <next-issue>2015-03-05T21:00:00Z</next-issue>
+      <timezone>EST5EDT</timezone>
+      <type>regular</type>
+    </product>
+    <source>
+      <more-information>http://weatheroffice.ec.gc.ca</more-information>
+      <production-center>Meteorological Service of Canada<sub-center>CWQB</sub-center></production-center>
+      <feedback/>
+      <credit/>
+      <credit-logo/>
+      <disclaimer>http://www.weatheroffice.ec.gc.ca/mainmenu/disclaimer_e.html</disclaimer>
+    </source>
+  </head>
+  <data>
+    <forecast>
+      <meteocode-forecast>
+        <location>
+          <msc-zone-code>r73.5</msc-zone-code>
+          <msc-zone-name lang="fr">Québec</msc-zone-name>
+          <msc-zone-name lang="en">Québec</msc-zone-name>
+        </location>
+        <parameters>
+          <warning-list/>
+          <cloud-list units="deci">
+            <cloud-cover start="2015-03-07T05:00:00Z" end="2015-03-07T05:00:00Z" ceiling-code="5">8</cloud-cover>
+            <cloud-cover start="2015-03-07T06:00:00Z" end="2015-03-07T06:00:00Z" ceiling-code="5">10</cloud-cover>
+            <cloud-cover start="2015-03-07T07:00:00Z" end="2015-03-07T07:00:00Z" ceiling-code="5">10</cloud-cover>
+            <cloud-cover start="2015-03-07T08:00:00Z" end="2015-03-07T08:00:00Z" ceiling-code="5">10</cloud-cover>
+            <cloud-cover start="2015-03-07T09:00:00Z" end="2015-03-07T09:00:00Z" ceiling-code="5">10</cloud-cover>
+            <cloud-cover start="2015-03-07T10:00:00Z" end="2015-03-07T10:00:00Z" ceiling-code="5">10</cloud-cover>
+            <cloud-cover start="2015-03-07T11:00:00Z" end="2015-03-07T11:00:00Z" ceiling-code="5">10</cloud-cover>
+            <cloud-cover start="2015-03-07T12:00:00Z" end="2015-03-07T12:00:00Z" ceiling-code="6">8</cloud-cover>
+            <cloud-cover start="2015-03-07T13:00:00Z" end="2015-03-07T13:00:00Z" ceiling-code="6">8</cloud-cover>
+            <cloud-cover start="2015-03-07T14:00:00Z" end="2015-03-07T14:00:00Z" ceiling-code="6">8</cloud-cover>
+            <cloud-cover start="2015-03-07T15:00:00Z" end="2015-03-07T15:00:00Z" ceiling-code="6">8</cloud-cover>
+            <cloud-cover start="2015-03-07T16:00:00Z" end="2015-03-07T16:00:00Z" ceiling-code="6">8</cloud-cover>
+            <cloud-cover start="2015-03-07T17:00:00Z" end="2015-03-07T17:00:00Z" ceiling-code="6">8</cloud-cover>
+            <cloud-cover start="2015-03-07T18:00:00Z" end="2015-03-07T18:00:00Z" ceiling-code="6">5</cloud-cover>
+            <cloud-cover start="2015-03-07T19:00:00Z" end="2015-03-07T19:00:00Z" ceiling-code="6">5</cloud-cover>
+            <cloud-cover start="2015-03-07T20:00:00Z" end="2015-03-07T20:00:00Z" ceiling-code="6">5</cloud-cover>
+            <cloud-cover start="2015-03-07T21:00:00Z" end="2015-03-07T21:00:00Z" ceiling-code="6">3</cloud-cover>
+            <cloud-cover start="2015-03-07T22:00:00Z" end="2015-03-07T22:00:00Z" ceiling-code="6">3</cloud-cover>
+            <cloud-cover start="2015-03-07T23:00:00Z" end="2015-03-07T23:00:00Z" ceiling-code="6">3</cloud-cover>
+            <cloud-cover start="2015-03-08T00:00:00Z" end="2015-03-08T00:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-08T01:00:00Z" end="2015-03-08T01:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-08T02:00:00Z" end="2015-03-08T02:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-08T03:00:00Z" end="2015-03-08T03:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-08T04:00:00Z" end="2015-03-08T04:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-08T05:00:00Z" end="2015-03-08T05:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-08T06:00:00Z" end="2015-03-08T06:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-08T07:00:00Z" end="2015-03-08T07:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-08T08:00:00Z" end="2015-03-08T08:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-08T09:00:00Z" end="2015-03-08T09:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-08T10:00:00Z" end="2015-03-08T10:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-08T11:00:00Z" end="2015-03-08T11:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-08T12:00:00Z" end="2015-03-08T12:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-08T13:00:00Z" end="2015-03-08T13:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-08T14:00:00Z" end="2015-03-08T14:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-08T15:00:00Z" end="2015-03-08T15:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-08T16:00:00Z" end="2015-03-08T16:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-08T17:00:00Z" end="2015-03-08T17:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-08T18:00:00Z" end="2015-03-08T18:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-08T19:00:00Z" end="2015-03-08T19:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-08T20:00:00Z" end="2015-03-08T20:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-08T21:00:00Z" end="2015-03-08T21:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-08T22:00:00Z" end="2015-03-08T22:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-08T23:00:00Z" end="2015-03-08T23:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-09T00:00:00Z" end="2015-03-09T00:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-09T01:00:00Z" end="2015-03-09T01:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-09T02:00:00Z" end="2015-03-09T02:00:00Z" ceiling-code="5">3</cloud-cover>
+            <cloud-cover start="2015-03-09T03:00:00Z" end="2015-03-09T03:00:00Z" ceiling-code="6">3</cloud-cover>
+            <cloud-cover start="2015-03-09T04:00:00Z" end="2015-03-09T04:00:00Z" ceiling-code="6">5</cloud-cover>
+            <cloud-cover start="2015-03-09T05:00:00Z" end="2015-03-09T05:00:00Z" ceiling-code="6">8</cloud-cover>
+            <cloud-cover start="2015-03-09T06:00:00Z" end="2015-03-09T06:00:00Z" ceiling-code="7">10</cloud-cover>
+            <cloud-cover start="2015-03-09T07:00:00Z" end="2015-03-09T07:00:00Z" ceiling-code="7">10</cloud-cover>
+            <cloud-cover start="2015-03-09T08:00:00Z" end="2015-03-09T08:00:00Z" ceiling-code="7">10</cloud-cover>
+            <cloud-cover start="2015-03-09T09:00:00Z" end="2015-03-09T09:00:00Z" ceiling-code="7">10</cloud-cover>
+            <cloud-cover start="2015-03-09T10:00:00Z" end="2015-03-09T10:00:00Z" ceiling-code="7">10</cloud-cover>
+            <cloud-cover start="2015-03-09T11:00:00Z" end="2015-03-09T11:00:00Z" ceiling-code="7">10</cloud-cover>
+            <cloud-cover start="2015-03-09T12:00:00Z" end="2015-03-09T12:00:00Z" ceiling-code="7">10</cloud-cover>
+            <cloud-cover start="2015-03-09T13:00:00Z" end="2015-03-09T13:00:00Z" ceiling-code="7">10</cloud-cover>
+            <cloud-cover start="2015-03-09T14:00:00Z" end="2015-03-09T14:00:00Z" ceiling-code="7">10</cloud-cover>
+            <cloud-cover start="2015-03-09T15:00:00Z" end="2015-03-09T15:00:00Z" ceiling-code="7">10</cloud-cover>
+            <cloud-cover start="2015-03-09T16:00:00Z" end="2015-03-09T16:00:00Z" ceiling-code="7">10</cloud-cover>
+            <cloud-cover start="2015-03-09T17:00:00Z" end="2015-03-09T17:00:00Z" ceiling-code="7">10</cloud-cover>
+            <cloud-cover start="2015-03-09T18:00:00Z" end="2015-03-09T18:00:00Z" ceiling-code="6">10</cloud-cover>
+            <cloud-cover start="2015-03-09T19:00:00Z" end="2015-03-09T19:00:00Z" ceiling-code="6">8</cloud-cover>
+            <cloud-cover start="2015-03-09T20:00:00Z" end="2015-03-09T20:00:00Z" ceiling-code="6">7</cloud-cover>
+            <cloud-cover start="2015-03-09T21:00:00Z" end="2015-03-09T21:00:00Z" ceiling-code="6">5</cloud-cover>
+            <cloud-cover start="2015-03-09T22:00:00Z" end="2015-03-09T22:00:00Z" ceiling-code="6">3</cloud-cover>
+            <cloud-cover start="2015-03-09T23:00:00Z" end="2015-03-09T23:00:00Z" ceiling-code="6">2</cloud-cover>
+            <cloud-cover start="2015-03-10T00:00:00Z" end="2015-03-10T00:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-10T01:00:00Z" end="2015-03-10T01:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-10T02:00:00Z" end="2015-03-10T02:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-10T03:00:00Z" end="2015-03-10T03:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-10T04:00:00Z" end="2015-03-10T04:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-10T05:00:00Z" end="2015-03-10T05:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-10T06:00:00Z" end="2015-03-10T06:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-10T07:00:00Z" end="2015-03-10T07:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-10T08:00:00Z" end="2015-03-10T08:00:00Z">0</cloud-cover>
+            <cloud-cover start="2015-03-10T09:00:00Z" end="2015-03-10T09:00:00Z" ceiling-code="9">0</cloud-cover>
+            <cloud-cover start="2015-03-10T10:00:00Z" end="2015-03-10T10:00:00Z" ceiling-code="9">3</cloud-cover>
+            <cloud-cover start="2015-03-10T11:00:00Z" end="2015-03-10T11:00:00Z" ceiling-code="9">7</cloud-cover>
+            <cloud-cover start="2015-03-10T12:00:00Z" end="2015-03-10T12:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-10T13:00:00Z" end="2015-03-10T13:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-10T14:00:00Z" end="2015-03-10T14:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-10T15:00:00Z" end="2015-03-10T15:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-10T16:00:00Z" end="2015-03-10T16:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-10T17:00:00Z" end="2015-03-10T17:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-10T18:00:00Z" end="2015-03-10T18:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-10T19:00:00Z" end="2015-03-10T19:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-10T20:00:00Z" end="2015-03-10T20:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-10T21:00:00Z" end="2015-03-10T21:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-10T22:00:00Z" end="2015-03-10T22:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-10T23:00:00Z" end="2015-03-10T23:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-11T00:00:00Z" end="2015-03-11T00:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-11T01:00:00Z" end="2015-03-11T01:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-11T02:00:00Z" end="2015-03-11T02:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-11T03:00:00Z" end="2015-03-11T03:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-11T04:00:00Z" end="2015-03-11T04:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-11T05:00:00Z" end="2015-03-11T05:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-11T06:00:00Z" end="2015-03-11T06:00:00Z" ceiling-code="9">10</cloud-cover>
+            <cloud-cover start="2015-03-11T07:00:00Z" end="2015-03-11T07:00:00Z" ceiling-code="9">8</cloud-cover>
+            <cloud-cover start="2015-03-11T08:00:00Z" end="2015-03-11T08:00:00Z" ceiling-code="9">5</cloud-cover>
+            <cloud-cover start="2015-03-11T09:00:00Z" end="2015-03-11T09:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-11T10:00:00Z" end="2015-03-11T10:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-11T11:00:00Z" end="2015-03-11T11:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-11T12:00:00Z" end="2015-03-11T12:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-11T13:00:00Z" end="2015-03-11T13:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-11T14:00:00Z" end="2015-03-11T14:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-11T15:00:00Z" end="2015-03-11T15:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-11T16:00:00Z" end="2015-03-11T16:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-11T17:00:00Z" end="2015-03-11T17:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-11T18:00:00Z" end="2015-03-11T18:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-11T19:00:00Z" end="2015-03-11T19:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-11T20:00:00Z" end="2015-03-11T20:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-11T21:00:00Z" end="2015-03-11T21:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-11T22:00:00Z" end="2015-03-11T22:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-11T23:00:00Z" end="2015-03-11T23:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-12T00:00:00Z" end="2015-03-12T00:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-12T01:00:00Z" end="2015-03-12T01:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-12T02:00:00Z" end="2015-03-12T02:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-12T03:00:00Z" end="2015-03-12T03:00:00Z">1</cloud-cover>
+            <cloud-cover start="2015-03-12T04:00:00Z" end="2015-03-12T04:00:00Z">1</cloud-cover>
+          </cloud-list>
+          <precipitation-list>
+            <precipitation-event start="2015-03-07T05:00:00Z" end="2015-03-07T12:00:00Z" type="snow" frequency="frequent" intensity="light" occurrence="certain"/>
+            <precipitation-event start="2015-03-09T06:00:00Z" end="2015-03-09T15:00:00Z" type="snow" frequency="continuous" intensity="nil" occurrence="certain"/>
+            <precipitation-event start="2015-03-09T15:00:00Z" end="2015-03-09T18:00:00Z" type="snow" frequency="continuous" intensity="light" occurrence="certain"/>
+            <precipitation-event start="2015-03-10T12:00:00Z" end="2015-03-11T06:00:00Z" type="flurries" frequency="frequent" intensity="nil" occurrence="certain"/>
+          </precipitation-list>
+          <probability-of-precipitation-list units="%">
+            <probability-of-precipitation start="2015-03-07T05:00:00Z" end="2015-03-07T12:00:00Z"> 80</probability-of-precipitation>
+            <probability-of-precipitation start="2015-03-07T12:00:00Z" end="2015-03-07T18:00:00Z"> 20</probability-of-precipitation>
+            <probability-of-precipitation start="2015-03-07T18:00:00Z" end="2015-03-08T00:00:00Z"> 10</probability-of-precipitation>
+            <probability-of-precipitation start="2015-03-08T00:00:00Z" end="2015-03-09T00:00:00Z">  0</probability-of-precipitation>
+            <probability-of-precipitation start="2015-03-09T00:00:00Z" end="2015-03-09T06:00:00Z"> 20</probability-of-precipitation>
+            <probability-of-precipitation start="2015-03-09T06:00:00Z" end="2015-03-09T18:00:00Z"> 80</probability-of-precipitation>
+            <probability-of-precipitation start="2015-03-09T18:00:00Z" end="2015-03-10T12:00:00Z"> 10</probability-of-precipitation>
+            <probability-of-precipitation start="2015-03-10T12:00:00Z" end="2015-03-11T06:00:00Z"> 60</probability-of-precipitation>
+            <probability-of-precipitation start="2015-03-11T06:00:00Z" end="2015-03-11T12:00:00Z"> 20</probability-of-precipitation>
+            <probability-of-precipitation start="2015-03-11T12:00:00Z" end="2015-03-12T05:00:00Z"> 10</probability-of-precipitation>
+          </probability-of-precipitation-list>
+          <accum-list units="mm">
+            <accum-amount start="2015-03-07T05:00:00Z" end="2015-03-07T06:00:00Z" type="N/A">
+              <lower-limit cumul-inf="0.00">0.00</lower-limit>
+              <upper-limit cumul-sup="0.00">0.00</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-07T06:00:00Z" end="2015-03-07T07:00:00Z" type="snow">
+              <lower-limit cumul-inf="0.00">0.00</lower-limit>
+              <upper-limit cumul-sup="3.33">3.33</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-07T07:00:00Z" end="2015-03-07T08:00:00Z" type="snow">
+              <lower-limit cumul-inf="0.00">0.00</lower-limit>
+              <upper-limit cumul-sup="6.67">3.33</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-07T08:00:00Z" end="2015-03-07T09:00:00Z" type="snow">
+              <lower-limit cumul-inf="0.00">0.00</lower-limit>
+              <upper-limit cumul-sup="10.00">3.33</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-07T09:00:00Z" end="2015-03-07T10:00:00Z" type="snow">
+              <lower-limit cumul-inf="0.00">0.00</lower-limit>
+              <upper-limit cumul-sup="13.33">3.33</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-07T10:00:00Z" end="2015-03-07T11:00:00Z" type="snow">
+              <lower-limit cumul-inf="0.00">0.00</lower-limit>
+              <upper-limit cumul-sup="16.67">3.33</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-07T11:00:00Z" end="2015-03-07T12:00:00Z" type="snow">
+              <lower-limit cumul-inf="0.00">0.00</lower-limit>
+              <upper-limit cumul-sup="20.00">3.33</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-07T12:00:00Z" end="2015-03-09T06:00:00Z" type="N/A">
+              <lower-limit cumul-inf="0.00">0.00</lower-limit>
+              <upper-limit cumul-sup="20.00">0.00</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-09T06:00:00Z" end="2015-03-09T07:00:00Z" type="snow">
+              <lower-limit cumul-inf="3.33">3.33</lower-limit>
+              <upper-limit cumul-sup="23.33">3.33</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-09T07:00:00Z" end="2015-03-09T08:00:00Z" type="snow">
+              <lower-limit cumul-inf="6.67">3.33</lower-limit>
+              <upper-limit cumul-sup="26.67">3.33</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-09T08:00:00Z" end="2015-03-09T09:00:00Z" type="snow">
+              <lower-limit cumul-inf="10.00">3.33</lower-limit>
+              <upper-limit cumul-sup="30.00">3.33</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-09T09:00:00Z" end="2015-03-09T10:00:00Z" type="snow">
+              <lower-limit cumul-inf="13.33">3.33</lower-limit>
+              <upper-limit cumul-sup="36.67">6.67</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-09T10:00:00Z" end="2015-03-09T11:00:00Z" type="snow">
+              <lower-limit cumul-inf="16.67">3.33</lower-limit>
+              <upper-limit cumul-sup="43.33">6.67</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-09T11:00:00Z" end="2015-03-09T12:00:00Z" type="snow">
+              <lower-limit cumul-inf="20.00">3.33</lower-limit>
+              <upper-limit cumul-sup="50.00">6.67</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-09T12:00:00Z" end="2015-03-09T13:00:00Z" type="snow">
+              <lower-limit cumul-inf="23.33">3.33</lower-limit>
+              <upper-limit cumul-sup="56.67">6.67</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-09T13:00:00Z" end="2015-03-09T14:00:00Z" type="snow">
+              <lower-limit cumul-inf="26.67">3.33</lower-limit>
+              <upper-limit cumul-sup="63.33">6.67</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-09T14:00:00Z" end="2015-03-09T15:00:00Z" type="snow">
+              <lower-limit cumul-inf="30.00">3.33</lower-limit>
+              <upper-limit cumul-sup="70.00">6.67</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-09T15:00:00Z" end="2015-03-09T16:00:00Z" type="snow">
+              <lower-limit cumul-inf="30.00">0.00</lower-limit>
+              <upper-limit cumul-sup="73.33">3.33</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-09T16:00:00Z" end="2015-03-09T17:00:00Z" type="snow">
+              <lower-limit cumul-inf="30.00">0.00</lower-limit>
+              <upper-limit cumul-sup="76.67">3.33</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-09T17:00:00Z" end="2015-03-09T18:00:00Z" type="snow">
+              <lower-limit cumul-inf="30.00">0.00</lower-limit>
+              <upper-limit cumul-sup="80.00">3.33</upper-limit>
+            </accum-amount>
+            <accum-amount start="2015-03-09T18:00:00Z" end="2015-03-12T05:00:00Z" type="N/A">
+              <lower-limit cumul-inf="30.00">0.00</lower-limit>
+              <upper-limit cumul-sup="80.00">0.00</upper-limit>
+            </accum-amount>
+          </accum-list>
+          <snow-level-list units="m"/>
+          <temperature-list type="air" units="celsius">
+            <temperature-value start="2015-03-07T04:00:00Z" end="2015-03-07T04:00:00Z" trend="interpolated">
+              <lower-limit>-9999.00</lower-limit>
+              <upper-limit>-9999.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T05:00:00Z" end="2015-03-07T05:00:00Z" trend="intermediate point">
+              <lower-limit>-12.00</lower-limit>
+              <upper-limit>-12.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T06:00:00Z" end="2015-03-07T06:00:00Z" trend="intermediate point">
+              <lower-limit>-11.00</lower-limit>
+              <upper-limit>-11.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T07:00:00Z" end="2015-03-07T07:00:00Z" trend="interpolated">
+              <lower-limit>-11.00</lower-limit>
+              <upper-limit>-11.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T08:00:00Z" end="2015-03-07T08:00:00Z" trend="interpolated">
+              <lower-limit>-11.00</lower-limit>
+              <upper-limit>-11.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T09:00:00Z" end="2015-03-07T09:00:00Z" trend="intermediate point">
+              <lower-limit>-11.00</lower-limit>
+              <upper-limit>-11.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T10:00:00Z" end="2015-03-07T10:00:00Z" trend="interpolated">
+              <lower-limit>-10.67</lower-limit>
+              <upper-limit>-10.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T11:00:00Z" end="2015-03-07T11:00:00Z" trend="interpolated">
+              <lower-limit>-10.33</lower-limit>
+              <upper-limit>-10.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T12:00:00Z" end="2015-03-07T12:00:00Z" trend="intermediate point">
+              <lower-limit>-10.00</lower-limit>
+              <upper-limit>-10.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T13:00:00Z" end="2015-03-07T13:00:00Z" trend="interpolated">
+              <lower-limit>-9.33</lower-limit>
+              <upper-limit>-9.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T14:00:00Z" end="2015-03-07T14:00:00Z" trend="interpolated">
+              <lower-limit>-8.67</lower-limit>
+              <upper-limit>-8.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T15:00:00Z" end="2015-03-07T15:00:00Z" trend="intermediate point">
+              <lower-limit>-8.00</lower-limit>
+              <upper-limit>-8.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T16:00:00Z" end="2015-03-07T16:00:00Z" trend="interpolated">
+              <lower-limit>-7.33</lower-limit>
+              <upper-limit>-7.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T17:00:00Z" end="2015-03-07T17:00:00Z" trend="interpolated">
+              <lower-limit>-6.67</lower-limit>
+              <upper-limit>-6.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T18:00:00Z" end="2015-03-07T18:00:00Z" trend="intermediate point">
+              <lower-limit>-6.00</lower-limit>
+              <upper-limit>-6.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T19:00:00Z" end="2015-03-07T19:00:00Z" trend="interpolated">
+              <lower-limit>-5.33</lower-limit>
+              <upper-limit>-5.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T20:00:00Z" end="2015-03-07T20:00:00Z" trend="interpolated">
+              <lower-limit>-4.67</lower-limit>
+              <upper-limit>-4.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T21:00:00Z" end="2015-03-07T21:00:00Z" trend="max">
+              <lower-limit>-4.00</lower-limit>
+              <upper-limit>-4.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T22:00:00Z" end="2015-03-07T22:00:00Z" trend="interpolated">
+              <lower-limit>-5.33</lower-limit>
+              <upper-limit>-5.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T23:00:00Z" end="2015-03-07T23:00:00Z" trend="interpolated">
+              <lower-limit>-6.67</lower-limit>
+              <upper-limit>-6.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T00:00:00Z" end="2015-03-08T00:00:00Z" trend="intermediate point">
+              <lower-limit>-8.00</lower-limit>
+              <upper-limit>-8.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T01:00:00Z" end="2015-03-08T01:00:00Z" trend="interpolated">
+              <lower-limit>-7.67</lower-limit>
+              <upper-limit>-7.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T02:00:00Z" end="2015-03-08T02:00:00Z" trend="interpolated">
+              <lower-limit>-7.33</lower-limit>
+              <upper-limit>-7.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T03:00:00Z" end="2015-03-08T03:00:00Z" trend="intermediate point">
+              <lower-limit>-7.00</lower-limit>
+              <upper-limit>-7.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T04:00:00Z" end="2015-03-08T04:00:00Z" trend="interpolated">
+              <lower-limit>-8.33</lower-limit>
+              <upper-limit>-8.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T05:00:00Z" end="2015-03-08T05:00:00Z" trend="interpolated">
+              <lower-limit>-9.67</lower-limit>
+              <upper-limit>-9.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T06:00:00Z" end="2015-03-08T06:00:00Z" trend="intermediate point">
+              <lower-limit>-11.00</lower-limit>
+              <upper-limit>-11.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T07:00:00Z" end="2015-03-08T07:00:00Z" trend="interpolated">
+              <lower-limit>-12.00</lower-limit>
+              <upper-limit>-12.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T08:00:00Z" end="2015-03-08T08:00:00Z" trend="interpolated">
+              <lower-limit>-13.00</lower-limit>
+              <upper-limit>-13.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T09:00:00Z" end="2015-03-08T09:00:00Z" trend="intermediate point">
+              <lower-limit>-14.00</lower-limit>
+              <upper-limit>-14.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T10:00:00Z" end="2015-03-08T10:00:00Z" trend="interpolated">
+              <lower-limit>-14.33</lower-limit>
+              <upper-limit>-14.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T11:00:00Z" end="2015-03-08T11:00:00Z" trend="interpolated">
+              <lower-limit>-14.67</lower-limit>
+              <upper-limit>-14.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T12:00:00Z" end="2015-03-08T12:00:00Z" trend="min">
+              <lower-limit>-15.00</lower-limit>
+              <upper-limit>-15.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T13:00:00Z" end="2015-03-08T13:00:00Z" trend="interpolated">
+              <lower-limit>-13.00</lower-limit>
+              <upper-limit>-13.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T14:00:00Z" end="2015-03-08T14:00:00Z" trend="interpolated">
+              <lower-limit>-11.00</lower-limit>
+              <upper-limit>-11.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T15:00:00Z" end="2015-03-08T15:00:00Z" trend="intermediate point">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T16:00:00Z" end="2015-03-08T16:00:00Z" trend="interpolated">
+              <lower-limit>-8.00</lower-limit>
+              <upper-limit>-8.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T17:00:00Z" end="2015-03-08T17:00:00Z" trend="interpolated">
+              <lower-limit>-7.00</lower-limit>
+              <upper-limit>-7.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T18:00:00Z" end="2015-03-08T18:00:00Z" trend="intermediate point">
+              <lower-limit>-6.00</lower-limit>
+              <upper-limit>-6.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T19:00:00Z" end="2015-03-08T19:00:00Z" trend="interpolated">
+              <lower-limit>-5.33</lower-limit>
+              <upper-limit>-5.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T20:00:00Z" end="2015-03-08T20:00:00Z" trend="interpolated">
+              <lower-limit>-4.67</lower-limit>
+              <upper-limit>-4.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T21:00:00Z" end="2015-03-08T21:00:00Z" trend="max">
+              <lower-limit>-4.00</lower-limit>
+              <upper-limit>-4.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T22:00:00Z" end="2015-03-08T22:00:00Z" trend="interpolated">
+              <lower-limit>-4.67</lower-limit>
+              <upper-limit>-4.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T23:00:00Z" end="2015-03-08T23:00:00Z" trend="interpolated">
+              <lower-limit>-5.33</lower-limit>
+              <upper-limit>-5.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T00:00:00Z" end="2015-03-09T00:00:00Z" trend="intermediate point">
+              <lower-limit>-6.00</lower-limit>
+              <upper-limit>-6.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T01:00:00Z" end="2015-03-09T01:00:00Z" trend="interpolated">
+              <lower-limit>-7.00</lower-limit>
+              <upper-limit>-7.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T02:00:00Z" end="2015-03-09T02:00:00Z" trend="interpolated">
+              <lower-limit>-8.00</lower-limit>
+              <upper-limit>-8.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T03:00:00Z" end="2015-03-09T03:00:00Z" trend="intermediate point">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T04:00:00Z" end="2015-03-09T04:00:00Z" trend="interpolated">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T05:00:00Z" end="2015-03-09T05:00:00Z" trend="interpolated">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T06:00:00Z" end="2015-03-09T06:00:00Z" trend="intermediate point">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T07:00:00Z" end="2015-03-09T07:00:00Z" trend="interpolated">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T08:00:00Z" end="2015-03-09T08:00:00Z" trend="interpolated">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T09:00:00Z" end="2015-03-09T09:00:00Z" trend="min">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T10:00:00Z" end="2015-03-09T10:00:00Z" trend="interpolated">
+              <lower-limit>-8.67</lower-limit>
+              <upper-limit>-8.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T11:00:00Z" end="2015-03-09T11:00:00Z" trend="interpolated">
+              <lower-limit>-8.33</lower-limit>
+              <upper-limit>-8.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T12:00:00Z" end="2015-03-09T12:00:00Z" trend="intermediate point">
+              <lower-limit>-8.00</lower-limit>
+              <upper-limit>-8.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T13:00:00Z" end="2015-03-09T13:00:00Z" trend="interpolated">
+              <lower-limit>-7.00</lower-limit>
+              <upper-limit>-7.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T14:00:00Z" end="2015-03-09T14:00:00Z" trend="interpolated">
+              <lower-limit>-6.00</lower-limit>
+              <upper-limit>-6.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T15:00:00Z" end="2015-03-09T15:00:00Z" trend="intermediate point">
+              <lower-limit>-5.00</lower-limit>
+              <upper-limit>-5.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T16:00:00Z" end="2015-03-09T16:00:00Z" trend="interpolated">
+              <lower-limit>-4.00</lower-limit>
+              <upper-limit>-4.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T17:00:00Z" end="2015-03-09T17:00:00Z" trend="interpolated">
+              <lower-limit>-3.00</lower-limit>
+              <upper-limit>-3.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T18:00:00Z" end="2015-03-09T18:00:00Z" trend="intermediate point">
+              <lower-limit>-2.00</lower-limit>
+              <upper-limit>-2.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T19:00:00Z" end="2015-03-09T19:00:00Z" trend="interpolated">
+              <lower-limit>-1.67</lower-limit>
+              <upper-limit>-1.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T20:00:00Z" end="2015-03-09T20:00:00Z" trend="interpolated">
+              <lower-limit>-1.33</lower-limit>
+              <upper-limit>-1.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T21:00:00Z" end="2015-03-09T21:00:00Z" trend="max">
+              <lower-limit>-1.00</lower-limit>
+              <upper-limit>-1.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T22:00:00Z" end="2015-03-09T22:00:00Z" trend="interpolated">
+              <lower-limit>-1.67</lower-limit>
+              <upper-limit>-1.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T23:00:00Z" end="2015-03-09T23:00:00Z" trend="interpolated">
+              <lower-limit>-2.33</lower-limit>
+              <upper-limit>-2.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T00:00:00Z" end="2015-03-10T00:00:00Z" trend="intermediate point">
+              <lower-limit>-3.00</lower-limit>
+              <upper-limit>-3.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T01:00:00Z" end="2015-03-10T01:00:00Z" trend="interpolated">
+              <lower-limit>-4.33</lower-limit>
+              <upper-limit>-4.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T02:00:00Z" end="2015-03-10T02:00:00Z" trend="interpolated">
+              <lower-limit>-5.67</lower-limit>
+              <upper-limit>-5.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T03:00:00Z" end="2015-03-10T03:00:00Z" trend="intermediate point">
+              <lower-limit>-7.00</lower-limit>
+              <upper-limit>-7.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T04:00:00Z" end="2015-03-10T04:00:00Z" trend="interpolated">
+              <lower-limit>-8.00</lower-limit>
+              <upper-limit>-8.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T05:00:00Z" end="2015-03-10T05:00:00Z" trend="interpolated">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T06:00:00Z" end="2015-03-10T06:00:00Z" trend="intermediate point">
+              <lower-limit>-10.00</lower-limit>
+              <upper-limit>-10.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T07:00:00Z" end="2015-03-10T07:00:00Z" trend="interpolated">
+              <lower-limit>-10.67</lower-limit>
+              <upper-limit>-10.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T08:00:00Z" end="2015-03-10T08:00:00Z" trend="interpolated">
+              <lower-limit>-11.33</lower-limit>
+              <upper-limit>-11.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T09:00:00Z" end="2015-03-10T09:00:00Z" trend="min">
+              <lower-limit>-12.00</lower-limit>
+              <upper-limit>-12.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T10:00:00Z" end="2015-03-10T10:00:00Z" trend="interpolated">
+              <lower-limit>-11.33</lower-limit>
+              <upper-limit>-11.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T11:00:00Z" end="2015-03-10T11:00:00Z" trend="interpolated">
+              <lower-limit>-10.67</lower-limit>
+              <upper-limit>-10.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T12:00:00Z" end="2015-03-10T12:00:00Z" trend="intermediate point">
+              <lower-limit>-10.00</lower-limit>
+              <upper-limit>-10.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T13:00:00Z" end="2015-03-10T13:00:00Z" trend="interpolated">
+              <lower-limit>-8.67</lower-limit>
+              <upper-limit>-8.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T14:00:00Z" end="2015-03-10T14:00:00Z" trend="interpolated">
+              <lower-limit>-7.33</lower-limit>
+              <upper-limit>-7.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T15:00:00Z" end="2015-03-10T15:00:00Z" trend="intermediate point">
+              <lower-limit>-6.00</lower-limit>
+              <upper-limit>-6.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T16:00:00Z" end="2015-03-10T16:00:00Z" trend="interpolated">
+              <lower-limit>-4.67</lower-limit>
+              <upper-limit>-4.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T17:00:00Z" end="2015-03-10T17:00:00Z" trend="interpolated">
+              <lower-limit>-3.33</lower-limit>
+              <upper-limit>-3.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T18:00:00Z" end="2015-03-10T18:00:00Z" trend="intermediate point">
+              <lower-limit>-2.00</lower-limit>
+              <upper-limit>-2.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T19:00:00Z" end="2015-03-10T19:00:00Z" trend="interpolated">
+              <lower-limit>-1.67</lower-limit>
+              <upper-limit>-1.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T20:00:00Z" end="2015-03-10T20:00:00Z" trend="interpolated">
+              <lower-limit>-1.33</lower-limit>
+              <upper-limit>-1.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T21:00:00Z" end="2015-03-10T21:00:00Z" trend="max">
+              <lower-limit>-1.00</lower-limit>
+              <upper-limit>-1.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T22:00:00Z" end="2015-03-10T22:00:00Z" trend="interpolated">
+              <lower-limit>-1.33</lower-limit>
+              <upper-limit>-1.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T23:00:00Z" end="2015-03-10T23:00:00Z" trend="interpolated">
+              <lower-limit>-1.67</lower-limit>
+              <upper-limit>-1.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T00:00:00Z" end="2015-03-11T00:00:00Z" trend="intermediate point">
+              <lower-limit>-2.00</lower-limit>
+              <upper-limit>-2.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T01:00:00Z" end="2015-03-11T01:00:00Z" trend="interpolated">
+              <lower-limit>-2.00</lower-limit>
+              <upper-limit>-2.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T02:00:00Z" end="2015-03-11T02:00:00Z" trend="interpolated">
+              <lower-limit>-2.00</lower-limit>
+              <upper-limit>-2.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T03:00:00Z" end="2015-03-11T03:00:00Z" trend="intermediate point">
+              <lower-limit>-2.00</lower-limit>
+              <upper-limit>-2.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T04:00:00Z" end="2015-03-11T04:00:00Z" trend="interpolated">
+              <lower-limit>-2.67</lower-limit>
+              <upper-limit>-2.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T05:00:00Z" end="2015-03-11T05:00:00Z" trend="interpolated">
+              <lower-limit>-3.33</lower-limit>
+              <upper-limit>-3.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T06:00:00Z" end="2015-03-11T06:00:00Z" trend="intermediate point">
+              <lower-limit>-4.00</lower-limit>
+              <upper-limit>-4.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T07:00:00Z" end="2015-03-11T07:00:00Z" trend="interpolated">
+              <lower-limit>-4.00</lower-limit>
+              <upper-limit>-4.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T08:00:00Z" end="2015-03-11T08:00:00Z" trend="interpolated">
+              <lower-limit>-4.00</lower-limit>
+              <upper-limit>-4.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T09:00:00Z" end="2015-03-11T09:00:00Z" trend="intermediate point">
+              <lower-limit>-4.00</lower-limit>
+              <upper-limit>-4.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T10:00:00Z" end="2015-03-11T10:00:00Z" trend="interpolated">
+              <lower-limit>-4.67</lower-limit>
+              <upper-limit>-4.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T11:00:00Z" end="2015-03-11T11:00:00Z" trend="interpolated">
+              <lower-limit>-5.33</lower-limit>
+              <upper-limit>-5.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T12:00:00Z" end="2015-03-11T12:00:00Z" trend="min">
+              <lower-limit>-6.00</lower-limit>
+              <upper-limit>-6.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T13:00:00Z" end="2015-03-11T13:00:00Z" trend="interpolated">
+              <lower-limit>-5.00</lower-limit>
+              <upper-limit>-5.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T14:00:00Z" end="2015-03-11T14:00:00Z" trend="interpolated">
+              <lower-limit>-4.00</lower-limit>
+              <upper-limit>-4.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T15:00:00Z" end="2015-03-11T15:00:00Z" trend="intermediate point">
+              <lower-limit>-3.00</lower-limit>
+              <upper-limit>-3.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T16:00:00Z" end="2015-03-11T16:00:00Z" trend="interpolated">
+              <lower-limit>-2.00</lower-limit>
+              <upper-limit>-2.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T17:00:00Z" end="2015-03-11T17:00:00Z" trend="interpolated">
+              <lower-limit>-1.00</lower-limit>
+              <upper-limit>-1.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T18:00:00Z" end="2015-03-11T18:00:00Z" trend="intermediate point">
+              <lower-limit>0.00</lower-limit>
+              <upper-limit>0.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T19:00:00Z" end="2015-03-11T19:00:00Z" trend="interpolated">
+              <lower-limit>0.33</lower-limit>
+              <upper-limit>0.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T20:00:00Z" end="2015-03-11T20:00:00Z" trend="interpolated">
+              <lower-limit>0.67</lower-limit>
+              <upper-limit>0.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T21:00:00Z" end="2015-03-11T21:00:00Z" trend="max">
+              <lower-limit>1.00</lower-limit>
+              <upper-limit>1.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T22:00:00Z" end="2015-03-11T22:00:00Z" trend="interpolated">
+              <lower-limit>-0.33</lower-limit>
+              <upper-limit>-0.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T23:00:00Z" end="2015-03-11T23:00:00Z" trend="interpolated">
+              <lower-limit>-1.67</lower-limit>
+              <upper-limit>-1.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-12T00:00:00Z" end="2015-03-12T00:00:00Z" trend="intermediate point">
+              <lower-limit>-3.00</lower-limit>
+              <upper-limit>-3.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-12T01:00:00Z" end="2015-03-12T01:00:00Z" trend="interpolated">
+              <lower-limit>-3.67</lower-limit>
+              <upper-limit>-3.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-12T02:00:00Z" end="2015-03-12T02:00:00Z" trend="interpolated">
+              <lower-limit>-4.33</lower-limit>
+              <upper-limit>-4.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-12T03:00:00Z" end="2015-03-12T03:00:00Z" trend="intermediate point">
+              <lower-limit>-5.00</lower-limit>
+              <upper-limit>-5.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-12T04:00:00Z" end="2015-03-12T04:00:00Z" trend="interpolated">
+              <lower-limit>-5.67</lower-limit>
+              <upper-limit>-5.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-12T05:00:00Z" end="2015-03-12T05:00:00Z" trend="interpolated">
+              <lower-limit>-6.33</lower-limit>
+              <upper-limit>-6.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-12T06:00:00Z" end="2015-03-12T06:00:00Z" trend="intermediate point">
+              <lower-limit>-7.00</lower-limit>
+              <upper-limit>-7.00</upper-limit>
+            </temperature-value>
+          </temperature-list>
+          <temperature-list type="dew-point" units="celsius">
+            <temperature-value start="2015-03-07T04:00:00Z" end="2015-03-07T04:00:00Z" trend="interpolated">
+              <lower-limit>-9999.00</lower-limit>
+              <upper-limit>-9999.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T05:00:00Z" end="2015-03-07T05:00:00Z" trend="intermediate point">
+              <lower-limit>-16.00</lower-limit>
+              <upper-limit>-16.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T06:00:00Z" end="2015-03-07T06:00:00Z" trend="intermediate point">
+              <lower-limit>-16.00</lower-limit>
+              <upper-limit>-16.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T07:00:00Z" end="2015-03-07T07:00:00Z" trend="interpolated">
+              <lower-limit>-15.33</lower-limit>
+              <upper-limit>-15.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T08:00:00Z" end="2015-03-07T08:00:00Z" trend="interpolated">
+              <lower-limit>-14.67</lower-limit>
+              <upper-limit>-14.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T09:00:00Z" end="2015-03-07T09:00:00Z" trend="intermediate point">
+              <lower-limit>-14.00</lower-limit>
+              <upper-limit>-14.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T10:00:00Z" end="2015-03-07T10:00:00Z" trend="interpolated">
+              <lower-limit>-14.00</lower-limit>
+              <upper-limit>-14.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T11:00:00Z" end="2015-03-07T11:00:00Z" trend="interpolated">
+              <lower-limit>-14.00</lower-limit>
+              <upper-limit>-14.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T12:00:00Z" end="2015-03-07T12:00:00Z" trend="intermediate point">
+              <lower-limit>-14.00</lower-limit>
+              <upper-limit>-14.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T13:00:00Z" end="2015-03-07T13:00:00Z" trend="interpolated">
+              <lower-limit>-13.33</lower-limit>
+              <upper-limit>-13.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T14:00:00Z" end="2015-03-07T14:00:00Z" trend="interpolated">
+              <lower-limit>-12.67</lower-limit>
+              <upper-limit>-12.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T15:00:00Z" end="2015-03-07T15:00:00Z" trend="intermediate point">
+              <lower-limit>-12.00</lower-limit>
+              <upper-limit>-12.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T16:00:00Z" end="2015-03-07T16:00:00Z" trend="interpolated">
+              <lower-limit>-12.00</lower-limit>
+              <upper-limit>-12.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T17:00:00Z" end="2015-03-07T17:00:00Z" trend="interpolated">
+              <lower-limit>-12.00</lower-limit>
+              <upper-limit>-12.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T18:00:00Z" end="2015-03-07T18:00:00Z" trend="intermediate point">
+              <lower-limit>-12.00</lower-limit>
+              <upper-limit>-12.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T19:00:00Z" end="2015-03-07T19:00:00Z" trend="interpolated">
+              <lower-limit>-12.00</lower-limit>
+              <upper-limit>-12.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T20:00:00Z" end="2015-03-07T20:00:00Z" trend="interpolated">
+              <lower-limit>-12.00</lower-limit>
+              <upper-limit>-12.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T21:00:00Z" end="2015-03-07T21:00:00Z" trend="intermediate point">
+              <lower-limit>-12.00</lower-limit>
+              <upper-limit>-12.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T22:00:00Z" end="2015-03-07T22:00:00Z" trend="interpolated">
+              <lower-limit>-11.67</lower-limit>
+              <upper-limit>-11.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T23:00:00Z" end="2015-03-07T23:00:00Z" trend="interpolated">
+              <lower-limit>-11.33</lower-limit>
+              <upper-limit>-11.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T00:00:00Z" end="2015-03-08T00:00:00Z" trend="intermediate point">
+              <lower-limit>-11.00</lower-limit>
+              <upper-limit>-11.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T01:00:00Z" end="2015-03-08T01:00:00Z" trend="interpolated">
+              <lower-limit>-11.33</lower-limit>
+              <upper-limit>-11.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T02:00:00Z" end="2015-03-08T02:00:00Z" trend="interpolated">
+              <lower-limit>-11.67</lower-limit>
+              <upper-limit>-11.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T03:00:00Z" end="2015-03-08T03:00:00Z" trend="intermediate point">
+              <lower-limit>-12.00</lower-limit>
+              <upper-limit>-12.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T04:00:00Z" end="2015-03-08T04:00:00Z" trend="interpolated">
+              <lower-limit>-13.33</lower-limit>
+              <upper-limit>-13.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T05:00:00Z" end="2015-03-08T05:00:00Z" trend="interpolated">
+              <lower-limit>-14.67</lower-limit>
+              <upper-limit>-14.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T06:00:00Z" end="2015-03-08T06:00:00Z" trend="intermediate point">
+              <lower-limit>-16.00</lower-limit>
+              <upper-limit>-16.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T07:00:00Z" end="2015-03-08T07:00:00Z" trend="interpolated">
+              <lower-limit>-18.33</lower-limit>
+              <upper-limit>-18.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T08:00:00Z" end="2015-03-08T08:00:00Z" trend="interpolated">
+              <lower-limit>-20.67</lower-limit>
+              <upper-limit>-20.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T09:00:00Z" end="2015-03-08T09:00:00Z" trend="intermediate point">
+              <lower-limit>-23.00</lower-limit>
+              <upper-limit>-23.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T10:00:00Z" end="2015-03-08T10:00:00Z" trend="interpolated">
+              <lower-limit>-23.00</lower-limit>
+              <upper-limit>-23.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T11:00:00Z" end="2015-03-08T11:00:00Z" trend="interpolated">
+              <lower-limit>-23.00</lower-limit>
+              <upper-limit>-23.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T12:00:00Z" end="2015-03-08T12:00:00Z" trend="intermediate point">
+              <lower-limit>-23.00</lower-limit>
+              <upper-limit>-23.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T13:00:00Z" end="2015-03-08T13:00:00Z" trend="interpolated">
+              <lower-limit>-20.33</lower-limit>
+              <upper-limit>-20.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T14:00:00Z" end="2015-03-08T14:00:00Z" trend="interpolated">
+              <lower-limit>-17.67</lower-limit>
+              <upper-limit>-17.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T15:00:00Z" end="2015-03-08T15:00:00Z" trend="intermediate point">
+              <lower-limit>-15.00</lower-limit>
+              <upper-limit>-15.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T16:00:00Z" end="2015-03-08T16:00:00Z" trend="interpolated">
+              <lower-limit>-14.67</lower-limit>
+              <upper-limit>-14.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T17:00:00Z" end="2015-03-08T17:00:00Z" trend="interpolated">
+              <lower-limit>-14.33</lower-limit>
+              <upper-limit>-14.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T18:00:00Z" end="2015-03-08T18:00:00Z" trend="intermediate point">
+              <lower-limit>-14.00</lower-limit>
+              <upper-limit>-14.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T19:00:00Z" end="2015-03-08T19:00:00Z" trend="interpolated">
+              <lower-limit>-14.00</lower-limit>
+              <upper-limit>-14.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T20:00:00Z" end="2015-03-08T20:00:00Z" trend="interpolated">
+              <lower-limit>-14.00</lower-limit>
+              <upper-limit>-14.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T21:00:00Z" end="2015-03-08T21:00:00Z" trend="intermediate point">
+              <lower-limit>-14.00</lower-limit>
+              <upper-limit>-14.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T22:00:00Z" end="2015-03-08T22:00:00Z" trend="interpolated">
+              <lower-limit>-13.67</lower-limit>
+              <upper-limit>-13.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T23:00:00Z" end="2015-03-08T23:00:00Z" trend="interpolated">
+              <lower-limit>-13.33</lower-limit>
+              <upper-limit>-13.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T00:00:00Z" end="2015-03-09T00:00:00Z" trend="intermediate point">
+              <lower-limit>-13.00</lower-limit>
+              <upper-limit>-13.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T01:00:00Z" end="2015-03-09T01:00:00Z" trend="interpolated">
+              <lower-limit>-13.33</lower-limit>
+              <upper-limit>-13.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T02:00:00Z" end="2015-03-09T02:00:00Z" trend="interpolated">
+              <lower-limit>-13.67</lower-limit>
+              <upper-limit>-13.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T03:00:00Z" end="2015-03-09T03:00:00Z" trend="intermediate point">
+              <lower-limit>-14.00</lower-limit>
+              <upper-limit>-14.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T04:00:00Z" end="2015-03-09T04:00:00Z" trend="interpolated">
+              <lower-limit>-14.33</lower-limit>
+              <upper-limit>-14.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T05:00:00Z" end="2015-03-09T05:00:00Z" trend="interpolated">
+              <lower-limit>-14.67</lower-limit>
+              <upper-limit>-14.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T06:00:00Z" end="2015-03-09T06:00:00Z" trend="intermediate point">
+              <lower-limit>-15.00</lower-limit>
+              <upper-limit>-15.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T07:00:00Z" end="2015-03-09T07:00:00Z" trend="interpolated">
+              <lower-limit>-14.00</lower-limit>
+              <upper-limit>-14.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T08:00:00Z" end="2015-03-09T08:00:00Z" trend="interpolated">
+              <lower-limit>-13.00</lower-limit>
+              <upper-limit>-13.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T09:00:00Z" end="2015-03-09T09:00:00Z" trend="intermediate point">
+              <lower-limit>-12.00</lower-limit>
+              <upper-limit>-12.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T10:00:00Z" end="2015-03-09T10:00:00Z" trend="interpolated">
+              <lower-limit>-11.67</lower-limit>
+              <upper-limit>-11.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T11:00:00Z" end="2015-03-09T11:00:00Z" trend="interpolated">
+              <lower-limit>-11.33</lower-limit>
+              <upper-limit>-11.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T12:00:00Z" end="2015-03-09T12:00:00Z" trend="intermediate point">
+              <lower-limit>-11.00</lower-limit>
+              <upper-limit>-11.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T13:00:00Z" end="2015-03-09T13:00:00Z" trend="interpolated">
+              <lower-limit>-10.00</lower-limit>
+              <upper-limit>-10.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T14:00:00Z" end="2015-03-09T14:00:00Z" trend="interpolated">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T15:00:00Z" end="2015-03-09T15:00:00Z" trend="intermediate point">
+              <lower-limit>-8.00</lower-limit>
+              <upper-limit>-8.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T16:00:00Z" end="2015-03-09T16:00:00Z" trend="interpolated">
+              <lower-limit>-7.33</lower-limit>
+              <upper-limit>-7.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T17:00:00Z" end="2015-03-09T17:00:00Z" trend="interpolated">
+              <lower-limit>-6.67</lower-limit>
+              <upper-limit>-6.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T18:00:00Z" end="2015-03-09T18:00:00Z" trend="intermediate point">
+              <lower-limit>-6.00</lower-limit>
+              <upper-limit>-6.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T19:00:00Z" end="2015-03-09T19:00:00Z" trend="interpolated">
+              <lower-limit>-5.67</lower-limit>
+              <upper-limit>-5.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T20:00:00Z" end="2015-03-09T20:00:00Z" trend="interpolated">
+              <lower-limit>-5.33</lower-limit>
+              <upper-limit>-5.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T21:00:00Z" end="2015-03-09T21:00:00Z" trend="intermediate point">
+              <lower-limit>-5.00</lower-limit>
+              <upper-limit>-5.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T22:00:00Z" end="2015-03-09T22:00:00Z" trend="interpolated">
+              <lower-limit>-7.00</lower-limit>
+              <upper-limit>-7.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T23:00:00Z" end="2015-03-09T23:00:00Z" trend="interpolated">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T00:00:00Z" end="2015-03-10T00:00:00Z" trend="intermediate point">
+              <lower-limit>-11.00</lower-limit>
+              <upper-limit>-11.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T01:00:00Z" end="2015-03-10T01:00:00Z" trend="interpolated">
+              <lower-limit>-12.00</lower-limit>
+              <upper-limit>-12.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T02:00:00Z" end="2015-03-10T02:00:00Z" trend="interpolated">
+              <lower-limit>-13.00</lower-limit>
+              <upper-limit>-13.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T03:00:00Z" end="2015-03-10T03:00:00Z" trend="intermediate point">
+              <lower-limit>-14.00</lower-limit>
+              <upper-limit>-14.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T04:00:00Z" end="2015-03-10T04:00:00Z" trend="interpolated">
+              <lower-limit>-14.67</lower-limit>
+              <upper-limit>-14.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T05:00:00Z" end="2015-03-10T05:00:00Z" trend="interpolated">
+              <lower-limit>-15.33</lower-limit>
+              <upper-limit>-15.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T06:00:00Z" end="2015-03-10T06:00:00Z" trend="intermediate point">
+              <lower-limit>-16.00</lower-limit>
+              <upper-limit>-16.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T07:00:00Z" end="2015-03-10T07:00:00Z" trend="interpolated">
+              <lower-limit>-16.33</lower-limit>
+              <upper-limit>-16.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T08:00:00Z" end="2015-03-10T08:00:00Z" trend="interpolated">
+              <lower-limit>-16.67</lower-limit>
+              <upper-limit>-16.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T09:00:00Z" end="2015-03-10T09:00:00Z" trend="intermediate point">
+              <lower-limit>-17.00</lower-limit>
+              <upper-limit>-17.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T10:00:00Z" end="2015-03-10T10:00:00Z" trend="interpolated">
+              <lower-limit>-16.67</lower-limit>
+              <upper-limit>-16.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T11:00:00Z" end="2015-03-10T11:00:00Z" trend="interpolated">
+              <lower-limit>-16.33</lower-limit>
+              <upper-limit>-16.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T12:00:00Z" end="2015-03-10T12:00:00Z" trend="intermediate point">
+              <lower-limit>-16.00</lower-limit>
+              <upper-limit>-16.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T13:00:00Z" end="2015-03-10T13:00:00Z" trend="interpolated">
+              <lower-limit>-14.33</lower-limit>
+              <upper-limit>-14.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T14:00:00Z" end="2015-03-10T14:00:00Z" trend="interpolated">
+              <lower-limit>-12.67</lower-limit>
+              <upper-limit>-12.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T15:00:00Z" end="2015-03-10T15:00:00Z" trend="intermediate point">
+              <lower-limit>-11.00</lower-limit>
+              <upper-limit>-11.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T16:00:00Z" end="2015-03-10T16:00:00Z" trend="interpolated">
+              <lower-limit>-10.33</lower-limit>
+              <upper-limit>-10.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T17:00:00Z" end="2015-03-10T17:00:00Z" trend="interpolated">
+              <lower-limit>-9.67</lower-limit>
+              <upper-limit>-9.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T18:00:00Z" end="2015-03-10T18:00:00Z" trend="intermediate point">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T19:00:00Z" end="2015-03-10T19:00:00Z" trend="interpolated">
+              <lower-limit>-8.00</lower-limit>
+              <upper-limit>-8.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T20:00:00Z" end="2015-03-10T20:00:00Z" trend="interpolated">
+              <lower-limit>-7.00</lower-limit>
+              <upper-limit>-7.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T21:00:00Z" end="2015-03-10T21:00:00Z" trend="intermediate point">
+              <lower-limit>-6.00</lower-limit>
+              <upper-limit>-6.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T22:00:00Z" end="2015-03-10T22:00:00Z" trend="interpolated">
+              <lower-limit>-5.67</lower-limit>
+              <upper-limit>-5.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T23:00:00Z" end="2015-03-10T23:00:00Z" trend="interpolated">
+              <lower-limit>-5.33</lower-limit>
+              <upper-limit>-5.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T00:00:00Z" end="2015-03-11T00:00:00Z" trend="intermediate point">
+              <lower-limit>-5.00</lower-limit>
+              <upper-limit>-5.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T01:00:00Z" end="2015-03-11T01:00:00Z" trend="interpolated">
+              <lower-limit>-4.67</lower-limit>
+              <upper-limit>-4.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T02:00:00Z" end="2015-03-11T02:00:00Z" trend="interpolated">
+              <lower-limit>-4.33</lower-limit>
+              <upper-limit>-4.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T03:00:00Z" end="2015-03-11T03:00:00Z" trend="intermediate point">
+              <lower-limit>-4.00</lower-limit>
+              <upper-limit>-4.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T04:00:00Z" end="2015-03-11T04:00:00Z" trend="interpolated">
+              <lower-limit>-4.33</lower-limit>
+              <upper-limit>-4.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T05:00:00Z" end="2015-03-11T05:00:00Z" trend="interpolated">
+              <lower-limit>-4.67</lower-limit>
+              <upper-limit>-4.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T06:00:00Z" end="2015-03-11T06:00:00Z" trend="intermediate point">
+              <lower-limit>-5.00</lower-limit>
+              <upper-limit>-5.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T07:00:00Z" end="2015-03-11T07:00:00Z" trend="interpolated">
+              <lower-limit>-5.67</lower-limit>
+              <upper-limit>-5.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T08:00:00Z" end="2015-03-11T08:00:00Z" trend="interpolated">
+              <lower-limit>-6.33</lower-limit>
+              <upper-limit>-6.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T09:00:00Z" end="2015-03-11T09:00:00Z" trend="intermediate point">
+              <lower-limit>-7.00</lower-limit>
+              <upper-limit>-7.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T10:00:00Z" end="2015-03-11T10:00:00Z" trend="interpolated">
+              <lower-limit>-7.33</lower-limit>
+              <upper-limit>-7.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T11:00:00Z" end="2015-03-11T11:00:00Z" trend="interpolated">
+              <lower-limit>-7.67</lower-limit>
+              <upper-limit>-7.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T12:00:00Z" end="2015-03-11T12:00:00Z" trend="intermediate point">
+              <lower-limit>-8.00</lower-limit>
+              <upper-limit>-8.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T13:00:00Z" end="2015-03-11T13:00:00Z" trend="interpolated">
+              <lower-limit>-8.33</lower-limit>
+              <upper-limit>-8.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T14:00:00Z" end="2015-03-11T14:00:00Z" trend="interpolated">
+              <lower-limit>-8.67</lower-limit>
+              <upper-limit>-8.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T15:00:00Z" end="2015-03-11T15:00:00Z" trend="intermediate point">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T16:00:00Z" end="2015-03-11T16:00:00Z" trend="interpolated">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T17:00:00Z" end="2015-03-11T17:00:00Z" trend="interpolated">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T18:00:00Z" end="2015-03-11T18:00:00Z" trend="intermediate point">
+              <lower-limit>-9.00</lower-limit>
+              <upper-limit>-9.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T19:00:00Z" end="2015-03-11T19:00:00Z" trend="interpolated">
+              <lower-limit>-9.33</lower-limit>
+              <upper-limit>-9.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T20:00:00Z" end="2015-03-11T20:00:00Z" trend="interpolated">
+              <lower-limit>-9.67</lower-limit>
+              <upper-limit>-9.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T21:00:00Z" end="2015-03-11T21:00:00Z" trend="intermediate point">
+              <lower-limit>-10.00</lower-limit>
+              <upper-limit>-10.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T22:00:00Z" end="2015-03-11T22:00:00Z" trend="interpolated">
+              <lower-limit>-10.00</lower-limit>
+              <upper-limit>-10.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T23:00:00Z" end="2015-03-11T23:00:00Z" trend="interpolated">
+              <lower-limit>-10.00</lower-limit>
+              <upper-limit>-10.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-12T00:00:00Z" end="2015-03-12T00:00:00Z" trend="intermediate point">
+              <lower-limit>-10.00</lower-limit>
+              <upper-limit>-10.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-12T01:00:00Z" end="2015-03-12T01:00:00Z" trend="interpolated">
+              <lower-limit>-10.33</lower-limit>
+              <upper-limit>-10.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-12T02:00:00Z" end="2015-03-12T02:00:00Z" trend="interpolated">
+              <lower-limit>-10.67</lower-limit>
+              <upper-limit>-10.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-12T03:00:00Z" end="2015-03-12T03:00:00Z" trend="intermediate point">
+              <lower-limit>-11.00</lower-limit>
+              <upper-limit>-11.00</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-12T04:00:00Z" end="2015-03-12T04:00:00Z" trend="interpolated">
+              <lower-limit>-11.33</lower-limit>
+              <upper-limit>-11.33</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-12T05:00:00Z" end="2015-03-12T05:00:00Z" trend="interpolated">
+              <lower-limit>-11.67</lower-limit>
+              <upper-limit>-11.67</upper-limit>
+            </temperature-value>
+            <temperature-value start="2015-03-12T06:00:00Z" end="2015-03-12T06:00:00Z" trend="intermediate point">
+              <lower-limit>-12.00</lower-limit>
+              <upper-limit>-12.00</upper-limit>
+            </temperature-value>
+          </temperature-list>
+          <temperature-list type="climatology" units="celsius">
+            <temperature-value start="2015-03-06T21:00:00Z" end="2015-03-07T11:00:00Z" trend="min">
+              <limit>-10.00</limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T11:00:00Z" end="2015-03-07T21:00:00Z" trend="max">
+              <limit>-2.00</limit>
+            </temperature-value>
+            <temperature-value start="2015-03-07T21:00:00Z" end="2015-03-08T11:00:00Z" trend="min">
+              <limit>-10.00</limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T11:00:00Z" end="2015-03-08T21:00:00Z" trend="max">
+              <limit>-2.00</limit>
+            </temperature-value>
+            <temperature-value start="2015-03-08T21:00:00Z" end="2015-03-09T11:00:00Z" trend="min">
+              <limit>-10.00</limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T11:00:00Z" end="2015-03-09T21:00:00Z" trend="max">
+              <limit>-2.00</limit>
+            </temperature-value>
+            <temperature-value start="2015-03-09T21:00:00Z" end="2015-03-10T11:00:00Z" trend="min">
+              <limit>-10.00</limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T11:00:00Z" end="2015-03-10T21:00:00Z" trend="max">
+              <limit>-1.00</limit>
+            </temperature-value>
+            <temperature-value start="2015-03-10T21:00:00Z" end="2015-03-11T11:00:00Z" trend="min">
+              <limit>-10.00</limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T11:00:00Z" end="2015-03-11T21:00:00Z" trend="max">
+              <limit>-1.00</limit>
+            </temperature-value>
+            <temperature-value start="2015-03-11T21:00:00Z" end="2015-03-12T11:00:00Z" trend="min">
+              <limit>-9.00</limit>
+            </temperature-value>
+          </temperature-list>
+          <wind-list units="kmh">
+            <wind start="2015-03-07T05:00:00Z" end="2015-03-07T09:00:00Z" direction="southwest">
+              <wind-speed>
+                <lower-limit>20</lower-limit>
+                <upper-limit>20</upper-limit>
+              </wind-speed>
+            </wind>
+            <wind start="2015-03-07T09:00:00Z" end="2015-03-08T03:00:00Z" direction="southwest">
+              <wind-speed>
+                <lower-limit>15</lower-limit>
+                <upper-limit>15</upper-limit>
+              </wind-speed>
+            </wind>
+            <wind start="2015-03-08T03:00:00Z" end="2015-03-08T18:00:00Z" direction="nil">
+              <wind-speed>
+                <lower-limit>5</lower-limit>
+                <upper-limit>5</upper-limit>
+              </wind-speed>
+            </wind>
+            <wind start="2015-03-08T18:00:00Z" end="2015-03-09T00:00:00Z" direction="west">
+              <wind-speed>
+                <lower-limit>15</lower-limit>
+                <upper-limit>15</upper-limit>
+              </wind-speed>
+            </wind>
+            <wind start="2015-03-09T00:00:00Z" end="2015-03-09T18:00:00Z" direction="nil">
+              <wind-speed>
+                <lower-limit>5</lower-limit>
+                <upper-limit>5</upper-limit>
+              </wind-speed>
+            </wind>
+            <wind start="2015-03-09T18:00:00Z" end="2015-03-10T03:00:00Z" direction="west">
+              <wind-speed>
+                <lower-limit>15</lower-limit>
+                <upper-limit>15</upper-limit>
+              </wind-speed>
+            </wind>
+            <wind start="2015-03-10T03:00:00Z" end="2015-03-10T09:00:00Z" direction="west">
+              <wind-speed>
+                <lower-limit>10</lower-limit>
+                <upper-limit>10</upper-limit>
+              </wind-speed>
+            </wind>
+            <wind start="2015-03-10T09:00:00Z" end="2015-03-10T15:00:00Z" direction="nil">
+              <wind-speed>
+                <lower-limit>5</lower-limit>
+                <upper-limit>5</upper-limit>
+              </wind-speed>
+            </wind>
+            <wind start="2015-03-10T15:00:00Z" end="2015-03-11T03:00:00Z" direction="southwest">
+              <wind-speed>
+                <lower-limit>15</lower-limit>
+                <upper-limit>15</upper-limit>
+              </wind-speed>
+            </wind>
+            <wind start="2015-03-11T03:00:00Z" end="2015-03-11T09:00:00Z" direction="west">
+              <wind-speed>
+                <lower-limit>15</lower-limit>
+                <upper-limit>15</upper-limit>
+              </wind-speed>
+            </wind>
+            <wind start="2015-03-11T09:00:00Z" end="2015-03-11T15:00:00Z" direction="west">
+              <wind-speed>
+                <lower-limit>10</lower-limit>
+                <upper-limit>10</upper-limit>
+              </wind-speed>
+            </wind>
+            <wind start="2015-03-11T15:00:00Z" end="2015-03-12T03:00:00Z" direction="west">
+              <wind-speed>
+                <lower-limit>15</lower-limit>
+                <upper-limit>15</upper-limit>
+              </wind-speed>
+            </wind>
+            <wind start="2015-03-12T03:00:00Z" end="2015-03-12T05:00:00Z" direction="west">
+              <wind-speed>
+                <lower-limit>10</lower-limit>
+                <upper-limit>10</upper-limit>
+              </wind-speed>
+            </wind>
+          </wind-list>
+          <visibility-list/>
+          <temperature-list type="sea-surface" units="celsius"/>
+          <freezing-spray-list/>
+          <wave-height-list units="m"/>
+          <ice-cover-list units="%"/>
+        </parameters>
+      </meteocode-forecast>
+    </forecast>
+  </data>
+</cmml>

@@ -1,0 +1,28 @@
+.ace_jsRealConstructor{color: blue;}
+#realisation {
+    border:  1px solid black;
+    background:white;
+    padding: 2px;
+    display: none;
+    position:absolute
+}
+#container {width:100%;text-align:center}
+#gauche {float:left}
+#droite {float:right}
+#centre {display:inline-block;margin:0 auto;}
+#titre { background: #fff; top: 0; height: 100px; left:0; right:0;}
+#entree {width: 50%; background: #fff; 
+         top: 100px; bottom:0; left:0;position:absolute;
+         border:  1px solid black;
+        }
+#sep {width:0px; 
+      top: 100px; bottom:0; left:50%;position:absolute; 
+      border:  2px solid black;
+      cursor: move;
+      z-index:1;
+    }
+#sortie { width: 50%; background: #fff; 
+          top: 100px; bottom:0; right:0; position:absolute;
+          border:  1px solid black;
+          overflow:scroll;
+        }

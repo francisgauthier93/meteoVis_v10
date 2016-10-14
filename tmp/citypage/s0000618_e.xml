@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+ <siteData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://dd.weather.gc.ca/citypage_weather/schema/site.xsd">
+ <license>http://dd.weather.gc.ca/doc/LICENCE_GENERAL.txt</license>
+ <dateTime name="xmlCreation" zone="UTC" UTCOffset="0">
+ <year>2016</year>
+ <month name="October">10</month>
+ <day name="Friday">14</day>
+ <hour>07</hour>
+ <minute>08</minute>
+ <timeStamp>20161014070800</timeStamp>
+ <textSummary>Friday October 14, 2016 at 07:08 UTC</textSummary>
+ </dateTime>
+ <dateTime name="xmlCreation" zone="MDT" UTCOffset="-6">
+ <year>2016</year>
+ <month name="October">10</month>
+ <day name="Friday">14</day>
+ <hour>01</hour>
+ <minute>08</minute>
+ <timeStamp>20161014010800</timeStamp>
+ <textSummary>Friday October 14, 2016 at 01:08 MDT</textSummary>
+ </dateTime>
+ <location>
+ <continent>North America</continent>
+ <country code="ca">Canada</country>
+ <province code="nt">Northwest Territories</province>
+ <name code="s0000618" lat="64.50N" lon="110.50W">Ekati (Lac de Gras)</name>
+ <region/>
+ </location>
+ <warnings/>
+ <currentConditions>
+ <station code="" lat="" lon=""/>
+ <dateTime name="observation" zone="UTC" UTCOffset="0"/>
+ <dateTime name="observation" zone="MDT" UTCOffset="-6"/>
+ <condition/>
+ <iconCode format="gif"/>
+ <temperature unitType="metric" units=""/>
+ <dewpoint unitType="metric" units=""/>
+ <pressure unitType="metric" units="" change="" tendency=""/>
+ <visibility unitType="metric" units=""/>
+ <relativeHumidity units=""/>
+ <wind>
+ <speed unitType="metric" units=""/>
+ <gust unitType="metric" units=""/>
+ <direction/>
+ <bearing units="degrees"/>
+ </wind>
+ </currentConditions>
+ <forecastGroup>
+ <dateTime name="forecastIssue" zone="UTC" UTCOffset="0"/>
+ <dateTime name="forecastIssue" zone="" UTCOffset="-0"/>
+ <regionalNormals>
+ <textSummary/>
+ <temperature unitType="metric" units="" class="high"/>
+ <temperature unitType="metric" units="" class="low"/>
+ </regionalNormals>
+ </forecastGroup>
+ <yesterdayConditions>
+ <temperature unitType="metric" units="C" class="high"/>
+ <temperature unitType="metric" units="C" class="low"/>
+ <precip unitType="metric" units="mm"/>
+ </yesterdayConditions>
+ <riseSet>
+ <disclaimer>The information provided here, for the times of the rise and set of the sun, is an estimate included as a convenience to our clients. Values shown here may differ from the official sunrise/sunset data available from (http://hia-iha.nrc-cnrc.gc.ca/sunrise_e.html)</disclaimer>
+ <dateTime name="sunrise" zone="UTC" UTCOffset="0">
+ <year>2016</year>
+ <month name="October">10</month>
+ <day name="Friday">14</day>
+ <hour>14</hour>
+ <minute>11</minute>
+ <timeStamp>20161014141100</timeStamp>
+ <textSummary>Friday October 14, 2016 at 14:11 UTC</textSummary>
+ </dateTime>
+ <dateTime name="sunrise" zone="MDT" UTCOffset="-6">
+ <year>2016</year>
+ <month name="October">10</month>
+ <day name="Friday">14</day>
+ <hour>08</hour>
+ <minute>11</minute>
+ <timeStamp>20161014081100</timeStamp>
+ <textSummary>Friday October 14, 2016 at 08:11 MDT</textSummary>
+ </dateTime>
+ <dateTime name="sunset" zone="UTC" UTCOffset="0">
+ <year>2016</year>
+ <month name="October">10</month>
+ <day name="Saturday">15</day>
+ <hour>00</hour>
+ <minute>05</minute>
+ <timeStamp>20161015000500</timeStamp>
+ <textSummary>Saturday October 15, 2016 at 00:05 UTC</textSummary>
+ </dateTime>
+ <dateTime name="sunset" zone="MDT" UTCOffset="-6">
+ <year>2016</year>
+ <month name="October">10</month>
+ <day name="Friday">14</day>
+ <hour>18</hour>
+ <minute>05</minute>
+ <timeStamp>20161014180500</timeStamp>
+ <textSummary>Friday October 14, 2016 at 18:05 MDT</textSummary>
+ </dateTime>
+ </riseSet>
+ <almanac>
+ <temperature class="extremeMax" period="1998-2014" unitType="metric" units="C" year="2003">1.5</temperature>
+ <temperature class="extremeMin" period="1998-2014" unitType="metric" units="C" year="2004">-14.5</temperature>
+ <temperature class="normalMax" unitType="metric" units="C"/>
+ <temperature class="normalMin" unitType="metric" units="C"/>
+ <temperature class="normalMean" unitType="metric" units="C"/>
+ <precipitation class="extremeRainfall" period="1998-2014" unitType="metric" units="mm" year="1998">0.0</precipitation>
+ <precipitation class="extremeSnowfall" period="1998-2014" unitType="metric" units="cm" year="2003">5.0</precipitation>
+ <precipitation class="extremePrecipitation" period="1998-2014" unitType="metric" units="mm" year="2012">3.4</precipitation>
+ <precipitation class="extremeSnowOnGround" period="1999-2014" unitType="metric" units="cm" year="2014">18.0</precipitation>
+ <pop units="%"/>
+ </almanac>
+ </siteData>
+
