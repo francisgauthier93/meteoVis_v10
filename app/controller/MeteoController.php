@@ -3,8 +3,11 @@
 /**
  * Description of MeteoController
  *
- * @author molinspa
+ * @author molinspa & gauthif
  */
+
+include 'meteoTextRealisations.php';
+
 class MeteoController extends BaseAppController
 {
     private $oMeteoCode;
@@ -105,19 +108,23 @@ class MeteoController extends BaseAppController
     
     public function forecast()
     {
+    	$meteoReal = new MeteoRealisation($this->oMeteoCode);
+    	
         $iNbDays = Config::get('meteo.limit.day.max');
         $sForecast = '';
         for($i = 0; $i < $iNbDays; $i++)
         {
             $sForecast .= '<tr>'
                     . '<td data-title="Day" data-original-translation>' . Date::getDisplayableDate(Date::getDateFromNow($i)) . '</td>'
-                    . '<td data-title="Minimum"></td>'
-                    . '<td data-title="Maximum"></td>'
+                    . '<td data-title="Minimum">'.$meteoReal->getMinMaxTempOneDay('min', $i).'</td>'
+                    . '<td data-title="Maximum">'.$meteoReal->getMinMaxTempOneDay('max', $i).'</td>'
                     . '<td data-title="Information"></td>'
                     . '</tr>';
         }
         
         $this->registry->template->sForecast = $sForecast;
         $this->registry->template->show('forecast');
+        
+        $meteoReal->updateMeteo();
     }
 }
