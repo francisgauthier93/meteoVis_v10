@@ -46,7 +46,7 @@
                 ?>
 
                 for(var i=1; i<8; i++){
-                	$("#forecastTable tr:eq("+i+")").append("<td>"+eval(phrase[i-1])+"</td>");
+                	$("#forecastTable tr:eq("+i+")").append("<td data-title='Information'>"+eval(phrase[i-1])+"</td>");
                 }
     			
             });
