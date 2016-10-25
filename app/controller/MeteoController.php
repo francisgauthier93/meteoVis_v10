@@ -8,7 +8,7 @@
 
 include 'meteoTextRealisations.php';
 
-include 'jsrealBLoaderFr.php';
+include 'jsrealbLoaderFr.php';
 
 class MeteoController extends BaseAppController
 {
