@@ -50,7 +50,7 @@
 }
 </style>
 <div id="forecast">
-    <table class="col-md-12 table-striped table-condensed cf">
+    <table class="col-md-12 table-striped table-condensed cf" id="forecastTable">
         <thead class="cf">
             <tr>
                 <th data-original-translation="">Day</th>
