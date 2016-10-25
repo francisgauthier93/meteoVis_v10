@@ -34,7 +34,6 @@
 <script type="text/javascript" charset="utf-8" src="public/js/util.js"></script>
 <script type="text/javascript" charset="utf-8" src="public/js/translator.js"></script>-->
 
-<?php echo Import::js('public/js/JSreal.js'); ?>
 <?php echo Import::js('public/js/jsreal-realization.js'); ?>
 <!--<script type="text/javascript" charset="utf-8" src="public/data/lex-fr.min.js"></script>-->
 <!--<script type="text/javascript" charset="utf-8" src="public/js/JSreal.js"></script>
