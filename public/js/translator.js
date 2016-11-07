@@ -20,9 +20,7 @@ $(document).ready(function() {
 function translatePage(sLanguage)
 {
     $("[data-original-translation]").each(function() {
-        var oElement = $(this);
-
-	console.log('oElement: '+oElement)        
+        var oElement = $(this);       
 
         if(oElement.attr("placeholder") !== undefined)
         {
@@ -84,6 +82,7 @@ function updateAttributeText(oElement, sAttributeName, sLanguage)
     
     var sTranslation = translateText(sOriginalText, sLanguage);
 	console.log('sOriginalText: '+sOriginalText)
+	console.log('sLanguage: '+sLanguage)
 	console.log('sTranslation: '+sTranslation)
     
     oElement.attr(sAttributeName, sTranslation);
