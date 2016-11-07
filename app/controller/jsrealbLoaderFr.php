@@ -23,10 +23,13 @@
                 console.log("Langue française chargée");
 
                 //Ajouts aux lexique:
-                JSrealB.Config.get("lexicon")["partiellement"] = {"Adv": {"tab": ["av"]}};
+                
+		JSrealB.Config.get("lexicon")["partiellement"] = {"Adv": {"tab": ["av"]}};
                 JSrealB.Config.get("lexicon")["nuageux"] = {"A": {"tab": ["n54"]}};
                 JSrealB.Config.get("lexicon")["alternance"] = {"N": {"g":"f","tab": ["n17"]}};
-                
+		
+		JSrealB.Config.get("lexicon")["alternance"] = {"N": {"g":"f","tab": ["n17"]}};
+		
                 
                 var phrase = 
                 <?php 
@@ -50,5 +53,57 @@
                 }
     			
             });
+
+    loadJSrealB(language){
+	JSrealLoader({
+                language: language,
+                lexiconUrl: (language=="fr")?URL.lexicon.fr:URL.lexicon.en,
+                ruleUrl: (language=="fr")?URL.rule.fr:URL.rule.en,
+                featureUrl: URL.feature
+            }, function() {
+                console.log((language=="fr")?"Langue française chargée":"English language loaded");
+
+                //Ajouts aux lexique:
+		if(language=="fr"){
+		    JSrealB.Config.get("lexicon")["partiellement"] = {"Adv": {"tab": ["av"]}};
+                    JSrealB.Config.get("lexicon")["nuageux"] = {"A": {"tab": ["n54"]}};
+                    JSrealB.Config.get("lexicon")["alternance"] = {"N": {"g":"f","tab": ["n17"]}};
+		    JSrealB.Config.get("lexicon")["possibilité"] = {"N": {"g":"f","tab": ["n17"]}};
+		    JSrealB.Config.get("lexicon")["précipitation"] = {"N": {"g":"f","tab": ["n17"]}};
+                    JSrealB.Config.get("lexicon")["quasi-certain"] = {"A": {"tab": ["n28"]}};	
+		}
+		else{                
+		    JSrealB.Config.get("lexicon")["sunny"] = {"A": {"tab": ["a2"]}};
+		    JSrealB.Config.get("lexicon")["mainly"] = {"Adv": {"tab": ["b1"]}};
+		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
+		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
+		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
+
+		
+                
+                var phrase = 
+                <?php 
+                	$jsonString = file_get_contents('public/data/additional-info-phrases.json');
+                	$phrases = json_decode($jsonString, true);
+                	
+					$phrases7 = "[";
+					for($i=0;$i<7;$i++){
+						if($i==0){
+							$phrases7 =  $phrases7 . "\"" . $phrases[$i]. "\"";
+						}else{
+							$phrases7 =  $phrases7 . ",\"" . $phrases[$i] . "\"";
+						}
+						
+					}
+                	echo "$phrases7]";
+                ?>
+
+                for(var i=1; i<8; i++){
+                	$("#forecastTable tr:eq("+i+")").append("<td data-title='Information'>"+eval(phrase[i-1])+"</td>");
+                }
+    			
+            });
+    }
+
 </script>
 
