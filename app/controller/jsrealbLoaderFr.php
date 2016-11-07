@@ -54,7 +54,7 @@
     			
             });
 
-    loadJSrealB(language){
+    var loadJSrealB = function(language){
 	JSrealLoader({
                 language: language,
                 lexiconUrl: (language=="fr")?URL.lexicon.fr:URL.lexicon.en,
