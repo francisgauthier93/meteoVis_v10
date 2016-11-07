@@ -14,7 +14,7 @@
                 feature: "JSrealB/data/feature.min.json"
             };
 
-    JSrealLoader({
+/*    JSrealLoader({
                 language: "fr",
                 lexiconUrl: URL.lexicon.fr,
                 ruleUrl: URL.rule.fr,
@@ -53,6 +53,7 @@
                 }
     			
             });
+*/
 
     var loadJSrealB = function(language){
 	JSrealLoader({
@@ -80,11 +81,9 @@
 		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
 		}
 
-		
-                
-                var phrase = 
+		var phraseEn = 
                 <?php 
-                	$jsonString = file_get_contents('public/data/additional-info-phrases.json');
+                	$jsonString = file_get_contents('public/data/additional-info-phrasesEn.json');
                 	$phrases = json_decode($jsonString, true);
                 	
 					$phrases7 = "[";
@@ -98,9 +97,27 @@
 					}
                 	echo "$phrases7]";
                 ?>
+                
+                var phraseFr = 
+                <?php 
+                	$jsonString = file_get_contents('public/data/additional-info-phrasesFr.json');
+                	$phrases = json_decode($jsonString, true);
+                	
+					$phrases7 = "[";
+					for($i=0;$i<7;$i++){
+						if($i==0){
+							$phrases7 =  $phrases7 . "\"" . $phrases[$i]. "\"";
+						}else{
+							$phrases7 =  $phrases7 . ",\"" . $phrases[$i] . "\"";
+						}
+						
+					}
+                	echo "$phrases7]";
+                ?>
+		var phrase = (language=="fr")?phraseFr:phraseEn;
 
                 for(var i=1; i<8; i++){
-                	$("#forecastTable tr:eq("+i+")").append("<td data-title='Information'>"+eval(phrase[i-1])+"</td>");
+                	$("#forecastTable td:eq("+(4*i+3)+")").html(eval(phrase[i-1]));
                 }
     			
             });

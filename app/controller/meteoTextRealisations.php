@@ -106,9 +106,9 @@ class MeteoRealisation
 			}
 		}else{
 			if($minOrMax == 'min'){
-				return $minTemp;
+				return round($minTemp);
 			}else{
-				return $maxTemp;
+				return round($maxTemp);
 			}
 		}
 		
@@ -133,8 +133,9 @@ class MeteoRealisation
 		$jsonString = file_get_contents('public/data/jsreal-realization-instruction.json');
 		$data = json_decode($jsonString, true);
 				
-		$sevenPhrases = array(7);
-		
+		$sevenPhrasesFr = array(7);
+		$sevenPhrasesEn = array(7);		
+
 		for ($day=0; $day<7; $day++){
 			$cloudCoverValues = $this->getMeteoInfoOneDay("cloudCover", $day);
 			//cloudCover integer (1 to 10)
@@ -144,11 +145,14 @@ class MeteoRealisation
 			$minTemp = $this->getMinMaxTempOneDay('min', $day); //15;
 			$maxTemp = $this->getMinMaxTempOneDay('max', $day); //23;
 			
-			$sevenPhrases[$day]= "S(NP(D('le'),N('journée')),VP(V('être').t('f'),$cloudCover),C('et'),NP(D('le'),N('température')),VP(V('varier').t('f'),P('entre'),CP(NO($minTemp),C('et'),NO($maxTemp))))";
+			$sevenPhrasesFr[$day]= "S(NP(D('le'),N('journée')),VP(V('être').t('f'),$cloudCover),C('et'),NP(D('le'),N('température')),VP(V('varier').t('f'),P('entre'),CP(NO($minTemp),C('et'),NO($maxTemp))))";
+			$sevenPhrasesEn[$day]= "S(NP(D('the'),N('day')),VP(V('be').t('f'),$cloudCover),C('and'),NP(D('the'),N('temperature')),VP(V('vary').t('f'),P('entre'),CP(NO($minTemp),C('et'),NO($maxTemp))))";
 		}
 		
-		$newJsonString = json_encode($sevenPhrases);
-		file_put_contents('public/data/additional-info-phrases.json', $newJsonString);
+		$newJsonString = json_encode($sevenPhrasesFr);
+		file_put_contents('public/data/additional-info-phrasesFr.json', $newJsonString);
+		$newJsonString = json_encode($sevenPhrasesEn);
+		file_put_contents('public/data/additional-info-phrasesEn.json', $newJsonString);
 		
 		//
 		

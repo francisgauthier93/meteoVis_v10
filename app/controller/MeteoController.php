@@ -120,7 +120,7 @@ class MeteoController extends BaseAppController
                     . '<td data-title="Day" data-original-translation>' . Date::getDateFromNow($i)/*Date::getDisplayableDate(Date::getDateFromNow($i))*/ . '</td>'
                     . '<td align="center" data-title="Minimum">'.$meteoReal->getMinMaxTempOneDay('min', $i).'</td>'
                     . '<td data-title="Maximum">'.$meteoReal->getMinMaxTempOneDay('max', $i).'</td>'
-                    //. '<td data-title="Information"></td>'
+                    . '<td data-title="Information"></td>'
                     . '</tr>';
         }
         
