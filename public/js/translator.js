@@ -137,6 +137,9 @@ function translateCleanText(sText, sLanguage)
             return translateCity(sText, sLanguage);
         }
     }
+    else{
+	console.warn('Translation table is undefined')
+    }
     
     return sText;
 }
