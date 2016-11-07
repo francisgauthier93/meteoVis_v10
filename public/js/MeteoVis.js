@@ -111,6 +111,7 @@ function setLanguage(l1, $button) {
     // patcher le placeholder que je n'arrive pas à faire avec le code de langue habituel
 //    $("#inVille").attr("placeholder", l1 == "fr" ? "Changer de ville" : "Change city");
     
+
     translatePage(l1);
     updateLocationLanguage(l1);
 }

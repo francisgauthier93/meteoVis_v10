@@ -21,7 +21,9 @@ function translatePage(sLanguage)
 {
     $("[data-original-translation]").each(function() {
         var oElement = $(this);
-        
+
+	console.log('oElement: '+oElement)        
+
         if(oElement.attr("placeholder") !== undefined)
         {
             updateAttributeText(oElement, "placeholder", sLanguage);
