@@ -83,6 +83,8 @@ function updateAttributeText(oElement, sAttributeName, sLanguage)
     }
     
     var sTranslation = translateText(sOriginalText, sLanguage);
+	console.log('sOriginalText: '+sOriginalText)
+	console.log('sTranslation: '+sTranslation)
     
     oElement.attr(sAttributeName, sTranslation);
 }

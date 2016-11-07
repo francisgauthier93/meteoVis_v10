@@ -1,2 +1,4 @@
 git pull
-chmod go+rx -R JSrealB/
+cd ..
+chmod go+rx -R MeteoVis
+cd MeteoVis
