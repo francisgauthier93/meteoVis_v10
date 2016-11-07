@@ -114,7 +114,10 @@
 					}
                 	echo "$phrases7]";
                 ?>
-		var phrase = (language=="fr")?phraseFr:phraseEn;
+
+		//var phrase = (language=="fr")?phraseFr:phraseEn;
+
+		var phrase = phraseFr;		
 
                 for(var i=1; i<8; i++){
                 	$("#forecastTable td:eq("+(4*i+3)+")").html(eval(phrase[i-1]));
