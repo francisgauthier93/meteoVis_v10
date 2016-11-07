@@ -120,7 +120,7 @@
 		var phrase = phraseFr;		
 
                 for(var i=1; i<8; i++){
-                	$("#forecastTable td:eq("+(4*i+3)+")").text(eval(phrase[i-1]));
+                	$("#forecastTable").find("tr").eq(i).find("td")[3].text(eval(phrase[i-1]));
                 }
     			
             });
