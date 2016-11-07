@@ -1,7 +1,7 @@
 {"fr":
     {"startDay":"NP(D('le'),N('journ\u00e9e')),VP(V('\u00eatre').t('f'),*|cloud-cover-value|*)","conjAnd":"C('et')","startTemp":"NP(D('le'),N('temp\u00e9rature')),VP(V('varier').t('f')),P('entre'),NO(*|temperature-min|*),C('et'),NO(*|temperature-max|*)","startTemp2":"NP(D('le'),N('temp\u00e9rature')),VP(V('varier').t('f')),P('entre'),$1,C('et'),$2","windCond":
     {"class":"windCond","default":"J(DTR(DT('*|wind-start-date|*'),DT('*|wind-end-date|*')).only('hour').t('nat'),NP(D('de'), N('vent'), N('*|wind-direction|*')).add(VP(V('pouvoir').f('pr'), V('atteindre'), N(*|wind-max-speed|*), P('km\/h'))).n('p')).cap(1)"},"max-temperature":
-    {"class":"max-temperature","default":"NP(N('temp\u00e9rature'), N('maximum'), C(':'), N($temperature_max), P('\u00b0C')).cap(1)"},"avg-temperature":
+    {"class":"max-temperature","default":"NP(N('temp\u00e9rature'), N('maximum'), C(':'), N(*|temperature_max|*), P('\u00b0C')).cap(1)"},"avg-temperature":
     {"class":"avg-temperature","default":"NP(N('temp\u00e9rature'), A('moyen'), C(':'), N(*|temperature-avg|*), P('\u00b0C')).cap(1)"},"min-temperature":
     {"class":"min-temperature","default":"NP(N('temp\u00e9rature'), N('minimum'), C(':'), N(*|temperature-min|*), P('\u00b0C')).cap(1)"},"temperature":
     {"class":"temperature","default":"J(DT('*|temperature-date|*').t('nat').only('hour'),S(Pro('il'), VP(V('faire'),N(*|temperature-value|*),P('\u00b0C')))).f('f').c(',').cap(1)"},"accumCond":
