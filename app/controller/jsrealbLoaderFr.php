@@ -78,6 +78,7 @@
 		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
 		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
 		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
+		}
 
 		
                 
@@ -103,7 +104,7 @@
                 }
     			
             });
-    };
+    }
 
 </script>
 
