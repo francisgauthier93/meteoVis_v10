@@ -27,10 +27,10 @@
     {"class":"cloudCond","default":"","alternative":
     {"cloud-cover-value":[
     {"min":0,"max":0,"text":"A('sunny')"},
-    {"min":1,"max":1,"text":"AP(ADV('mainly'),A('sunny'))"},
+    {"min":1,"max":1,"text":"AP(Adv('mainly'),A('sunny'))"},
     {"min":2,"max":3,"text":"NP(D('a'),N('mix'),PP(P('of'),CP(C('and'),N('sun'),N('cloud'))))"},
-    {"min":4,"max":6,"text":"AP(ADV('partly'),A('cloudy'))"},
-    {"min":7,"max":8,"text":"AP(ADV('mostly'),A('cloudy'))"},
+    {"min":4,"max":6,"text":"AP(Adv('partly'),A('cloudy'))"},
+    {"min":7,"max":8,"text":"AP(Adv('mostly'),A('cloudy'))"},
     {"min":9,"max":9,"text":"V('break').t('pp'),N('sky')"},
     {"min":10,"max":10,"text":"A('Cloudy')"}]}}}}
 
