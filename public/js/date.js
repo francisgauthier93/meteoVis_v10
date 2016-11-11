@@ -75,5 +75,9 @@ Date.prototype.toDateFr = function()
 
 Date.prototype.toDateEn = function()
 {
-    return this.toLocaleString();
+	var noYear = (this.getHours() === 0);
+	console.log("hours:"+this.getHours())
+	var sDateEn = DT(this).dOpt({det:false,year:noYear}).cap(true);
+	return sDateEn.toString();
+    //return this.toLocaleString();
 };

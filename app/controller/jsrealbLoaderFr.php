@@ -71,7 +71,8 @@
                     JSrealB.Config.get("lexicon")["alternance"] = {"N": {"g":"f","tab": ["n17"]}};
 		    JSrealB.Config.get("lexicon")["possibilité"] = {"N": {"g":"f","tab": ["n17"]}};
 		    JSrealB.Config.get("lexicon")["précipitation"] = {"N": {"g":"f","tab": ["n17"]}};
-                    JSrealB.Config.get("lexicon")["quasi-certain"] = {"A": {"tab": ["n28"]}};	
+                    JSrealB.Config.get("lexicon")["quasi-certain"] = {"A": {"tab": ["n28"]}};
+                   	JSrealB.Config.get("lexicon")["total"] ={"N": {"g": "m","tab": ["n5"]}}
 		}
 		else{                
 		    JSrealB.Config.get("lexicon")["sunny"] = {"A": {"tab": ["a2"]}};

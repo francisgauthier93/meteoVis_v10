@@ -4,8 +4,10 @@
     {"class":"max-temperature","default":"NP(N('temp\u00e9rature'), N('maximum'), C(':'), N(*|temperature_max|*), P('\u00b0C')).cap(1)"},"avg-temperature":
     {"class":"avg-temperature","default":"NP(N('temp\u00e9rature'), A('moyen'), C(':'), N(*|temperature-avg|*), P('\u00b0C')).cap(1)"},"min-temperature":
     {"class":"min-temperature","default":"NP(N('temp\u00e9rature'), N('minimum'), C(':'), N(*|temperature-min|*), P('\u00b0C')).cap(1)"},"temperature":
-    {"class":"temperature","default":"J(DT('*|temperature-date|*').t('nat').only('hour'),S(Pro('il'), VP(V('faire'),N(*|temperature-value|*),P('\u00b0C')))).f('f').c(',').cap(1)"},"accumCond":
-    {"class":"accumCond","default":"J(DT('*|accumulation-date|*').t('nat').only('day'), Br(), J(N('*|accumulation-type|*'), C(':'), NP(N(*|accumulation-amount|*), PP('cm'))).cap(1), Br(), J(N('Total'), C(':'), NP(N(*|accumulation-total|*), PP('cm')))).cap(1)"},"percentPrecipCond":
+    {"class":"temperature","default":"S(DT('*|temperature-date|*').dOpt({year: false, month: false, date: false, day: false, minute: false, second: false}).a(','),
+S(Pro('je'),VP(V('faire'),NO(*|temperature-value|*),'\u00b0C').t('f')))"},"accumCond":
+    {"class":"accumCond","default":"S(DT('*|accumulation-date|*').dOpt({year: false, day: false, hour: false, minute: false, second: false}).a(','), 
+N('*|accumulation-type|*'), C(':'), NP(NO(*|accumulation-amount|*),N('centimètre')).a(','),N('total'), C(':'), NP(NO(*|accumulation-total|*), N('centimètre')))"},"percentPrecipCond":
     {"class":"percentPrecipCond","default":"","alternative":
     {"probability-precipitation-value":[
     {"min":0,"max":49,"text":"NP(A('faible'),N('risque')),PP(P('de'),N('pr\u00e9cipitation').n('p'))"},
