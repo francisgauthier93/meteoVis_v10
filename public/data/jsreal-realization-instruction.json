@@ -32,4 +32,6 @@
     {"min":4,"max":6,"text":"AP(ADV('partly'),A('cloudy'))"},
     {"min":7,"max":8,"text":"AP(ADV('mostly'),A('cloudy'))"},
     {"min":9,"max":9,"text":"V('break').t('pp'),N('sky')"},
-    {"min":10,"max":10,"text":"A('Cloudy')"}]}}},"testPhrase":"S(Pro('je'),VP(V('aimer'),NP(D('le'),N('pomme'))))","testPhrase2":"S(Pro('je'),VP(V('aimer'),NP(D('le'),N('pomme'))))"}
+    {"min":10,"max":10,"text":"A('Cloudy')"}]}}}}
+
+

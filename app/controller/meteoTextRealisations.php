@@ -115,9 +115,9 @@ class MeteoRealisation
 		
 	}
 	
-	public function getCloudCoverText($coverValue,$dataJSON){
+	public function getCloudCoverText($coverValue,$dataJSON,$lang){
 	
-		$ccv = $dataJSON["fr"]["cloudCond"]["alternative"]["cloud-cover-value"];
+		$ccv = $dataJSON[$lang]["cloudCond"]["alternative"]["cloud-cover-value"];
 		for($i=1; $i<count($ccv); $i++){
 			if($ccv[$i]["min"] > $coverValue){
 				return $ccv[$i-1]["text"];
@@ -141,7 +141,8 @@ class MeteoRealisation
 			//cloudCover integer (1 to 10)
 			$cloudCover = intval(round($cloudCoverValues[2]));
 			//cloudCover text
-			$cloudCover = $this->getCloudCoverText($cloudCover,$data);
+			$cloudCoverFr = $this->getCloudCoverText($cloudCover,$data,"fr");
+			$cloudCoverEn = $this->getCloudCoverText($cloudCover,$data,"en");
 			$minTemp = $this->getMinMaxTempOneDay('min', $day); //15;
 			$maxTemp = $this->getMinMaxTempOneDay('max', $day); //23;
 			

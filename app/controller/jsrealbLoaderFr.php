@@ -114,10 +114,7 @@
 					}
                 	echo "$phrases7]";
                 ?>
-
-		//var phrase = (language=="fr")?phraseFr:phraseEn;
-
-		//var phrase = phraseFr;		
+		
 
         	for(var i=1; i<8; i++){
                 $("#forecastTable").find("tr").eq(i).find("td")[3].textContent = (language=="fr")?eval(phraseFr[i-1]):eval(phraseEn[i-1]);
