@@ -81,9 +81,6 @@ function updateAttributeText(oElement, sAttributeName, sLanguage)
     }
     
     var sTranslation = translateText(sOriginalText, sLanguage);
-	console.log('sOriginalText: '+sOriginalText)
-	console.log('sLanguage: '+sLanguage)
-	console.log('sTranslation: '+sTranslation)
     
     oElement.attr(sAttributeName, sTranslation);
 }
@@ -101,7 +98,6 @@ function translateText(sOriginalText, sLanguage)
     }
     
     var aDigitList = sOriginalText.match(/\d+/g);
-//        console.log(aDigitList);
     var sCleanText = $.trim(sOriginalText.replace(/\d+/g, "%d"));
 
     var sTranslation = translateCleanText(sCleanText, sLanguage);
