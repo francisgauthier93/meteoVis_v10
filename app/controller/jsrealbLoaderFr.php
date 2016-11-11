@@ -115,7 +115,7 @@
                 	echo "$phrases7]";
                 ?>
 
-		//var phrase = (language=="fr")?phraseFr:phraseEn;
+		var phrase = (language=="fr")?phraseFr:phraseEn;
 
 		var phrase = phraseFr;		
 
