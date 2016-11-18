@@ -32,6 +32,8 @@
     {"min":4,"max":6,"text":"AP(Adv('partly'),A('cloudy'))"},
     {"min":7,"max":8,"text":"AP(Adv('mostly'),A('cloudy'))"},
     {"min":9,"max":9,"text":"V('break').t('pp'),N('sky')"},
-    {"min":10,"max":10,"text":"A('Cloudy')"}]}}}}
+    {"min":10,"max":10,"text":"A('Cloudy')"}]}}},
+    {"class":"accumCond","default":"S(DT('*|accumulation-date|*').dOpt({year: false, day: false, hour: false, minute: false, second: false}).a(','),N('*|accumulation-type|*'), C(':'), NP(NO(*|accumulation-amount|*),N('centimeter')).a(','),N('total'), C(':'), NP(NO(*|accumulation-total|*), N('centimeter')))"}
+}
 
 

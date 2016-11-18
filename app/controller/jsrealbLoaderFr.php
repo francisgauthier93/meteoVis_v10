@@ -80,6 +80,7 @@
 		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
 		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
 		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
+		    JSrealB.Config.get("lexicon")["centimeter"] = {"N": {"tab": ["n1"]}};
 		}
 
 		var phraseEn = 
