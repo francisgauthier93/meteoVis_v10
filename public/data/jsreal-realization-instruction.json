@@ -24,7 +24,8 @@
 "en":{
 	"windCond":{
     	"class":"windCond",
-    	"default":""},
+    	"default":""
+    },
     "cloudCond":{
     	"class":"cloudCond",
     	"default":"",
@@ -41,8 +42,8 @@
     "accumCond": {
             "class": "accumCond",
             "default": "S(DT('*|accumulation-date|*').dOpt({year: false, day: false, hour: false, minute: false, second: false}).a(','),N('*|accumulation-type|*'), C(':'), NP(NO(*|accumulation-amount|*),N('centimeter')).a(','),N('total'), C(':'), NP(NO(*|accumulation-total|*), N('centimeter')))"
-        },
-    
+    }
+    }
 }
 
 
