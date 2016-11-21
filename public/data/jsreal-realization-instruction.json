@@ -39,7 +39,7 @@
 				}, {
 					"min": 50,
 					"max": 79,
-					"text": "NP(N('possibilité'),PP(P('de'),N('précipitation').n('p'))"
+					"text": "NP(N('possibilité'),PP(P('de'),N('précipitation').n('p')))"
 				}, {
 					"min": 80,
 					"max": 89,
