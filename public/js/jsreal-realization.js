@@ -84,10 +84,6 @@ var MeteoVisRealizer = function(language) {
                     
                     if(dynamicValuesExtraction === null)
                     {
-			//test with capital and end			
-                        console.log(newContent);
-                        //console.log(eval(newContent));
-			console.log(eval('S('+newContent+')'))
                         //element.attr("data-original-title", eval(newContent)).tooltip("fixTitle");
 			element.attr("data-original-title", eval('S('+newContent+')')).tooltip("fixTitle");
                     

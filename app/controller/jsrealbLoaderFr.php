@@ -67,12 +67,16 @@
                 //Ajouts aux lexique:
 		if(language=="fr"){
 		    JSrealB.Config.get("lexicon")["partiellement"] = {"Adv": {"tab": ["av"]}};
-                    JSrealB.Config.get("lexicon")["nuageux"] = {"A": {"tab": ["n54"]}};
-                    JSrealB.Config.get("lexicon")["alternance"] = {"N": {"g":"f","tab": ["n17"]}};
+            JSrealB.Config.get("lexicon")["nuageux"] = {"A": {"tab": ["n54"]}};
+            JSrealB.Config.get("lexicon")["alternance"] = {"N": {"g":"f","tab": ["n17"]}};
 		    JSrealB.Config.get("lexicon")["possibilité"] = {"N": {"g":"f","tab": ["n17"]}};
 		    JSrealB.Config.get("lexicon")["précipitation"] = {"N": {"g":"f","tab": ["n17"]}};
            	JSrealB.Config.get("lexicon")["total"] = {"N": {"g":"m","tab": ["n5"]}};
-                    JSrealB.Config.get("lexicon")["quasi-certain"] = {"A": {"tab": ["n28"]}};
+            JSrealB.Config.get("lexicon")["quasi-certain"] = {"A": {"tab": ["n28"]}};
+            JSrealB.Config.get("lexicon")["km/h"] = {"N": {"tab": ["nI"]}};
+            JSrealB.Config.get("lexicon")["ouest"] = JSrealB.Config.get("lexicon")["est"] = {"N": {"tab": ["n35"]}};
+            JSrealB.Config.get("lexicon")["nord-ouest"] = JSrealB.Config.get("lexicon")["nord-est"] = {"N": {"tab": ["n35"]}};
+            JSrealB.Config.get("lexicon")["sud-ouest"] = JSrealB.Config.get("lexicon")["sud-est"] = {"N": {"tab": ["n35"]}};            
 		}
 		else{                
 		    JSrealB.Config.get("lexicon")["sunny"] = {"A": {"tab": ["a2"]}};
@@ -81,6 +85,10 @@
 		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
 		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
 		    JSrealB.Config.get("lexicon")["centimeter"] = {"N": {"tab": ["n1"]}};
+		    JSrealB.Config.get("lexicon")["km/h"] = {"N": {"tab": ["n4"]}};
+		    JSrealB.Config.get("lexicon")["centimeter"] = {"N": {"tab": ["n1"]}};
+		    JSrealB.Config.get("lexicon")["south"] = {"N": {"tab": ["n4"]}};
+		    
 		}
 
 		var phraseEn = 
