@@ -94,6 +94,7 @@ function translateText(sOriginalText, sLanguage)
     
     if(sOriginalText.isDate())
     {
+    	console.log(sOriginalText.toDate())
         return sOriginalText.toDate().toLocalDate(sLanguage);
     }
     
