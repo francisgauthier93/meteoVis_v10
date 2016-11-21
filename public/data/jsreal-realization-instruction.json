@@ -96,6 +96,10 @@
 			"class": "accumCond",
 			"default": "S(DT('*|accumulation-date|*').dOpt({year: false, day: false, hour: false, minute: false, second: false}).a(','),N('*|accumulation-type|*'), C(':'), NP(NO(*|accumulation-amount|*),N('centimeter')).a(','),N('total'), C(':'), NP(NO(*|accumulation-total|*), N('centimeter')))"
 		},
+		"temperature": {
+			"class": "temperature",
+			"default": "S(DT('*|temperature-date|*').dOpt({year: false, month: false, date: false, day: false, minute: false, second: false}).a(','),S(Pro('he'),VP(V('be'),NO(*|temperature-value|*),'\u00b0C').t('f')))"
+		},
 		"cloudCond": {
 			"class": "cloudCond",
 			"default": "",

@@ -85,7 +85,7 @@ var MeteoVisRealizer = function(language) {
                     if(dynamicValuesExtraction === null)
                     {
                         //element.attr("data-original-title", eval(newContent)).tooltip("fixTitle");
-			element.attr("data-original-title", eval('S('+newContent+')')).tooltip("fixTitle");
+                    	element.attr("data-original-title", eval('S('+newContent+')')).tooltip("fixTitle");
                     
                     
                         if(eventType !== "click")
