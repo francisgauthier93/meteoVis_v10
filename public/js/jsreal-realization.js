@@ -19,10 +19,10 @@ var MeteoVisRealizer = function(language) {
     };
     
     this.exec = function(element, eventType, instruction) {
-        var language = this.language;
-    	var language2 = $("#lang")
-    	console.log(language2);
-    	console.log(language2[0]);    	
+        //var language = this.language;
+    	var languageButton = $("#lang").text()
+    	this.language = (languageButton=="en")?"fr":"en";
+    	var language = this.language;
         
         if(element.attr('class') === undefined)
         {
