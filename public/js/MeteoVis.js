@@ -102,6 +102,9 @@ function setLanguage(l1, $button) {
         $button.text(l2);
     }
     currLang = l1;
+    
+    console.log(this);
+    console.log(type(this));
     // cacher les options du dessin qui ne sont pas sélectionnés
     // Paul Out : 2015.03.19
 //    if (!$("#temperature").is(":checked"))
