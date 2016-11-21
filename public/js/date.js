@@ -70,7 +70,8 @@ Date.prototype.toDateFr = function()
 {
     //var noYear = (this.getHours() === 0);
 	var noYear=true;
-    var sDateFr = DT(this).dOpt({det:false,hour:false,year:!(noYear)}).cap(true);
+	//var sDateFr = DT(this).dOpt({det:false,hour:false,year:!(noYear)}).cap(true);
+    var sDateFr = S(DT(this).dOpt({year: !(noYear), hour: false, minute: false, second: false}),DT(this).dOpt({rtime:true}).en('('));
     return sDateFr.toString();
 };
 
