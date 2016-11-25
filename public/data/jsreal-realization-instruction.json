@@ -131,7 +131,7 @@
 				}, {
 					"min": 10,
 					"max": 10,
-					"text": "A('Cloudy')"
+					"text": "A('cloudy')"
 				}]
 			}
 		}
