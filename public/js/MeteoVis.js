@@ -406,7 +406,7 @@ $(document).ready(function () {
     // charger JSrealB lors de l'initialisation
     loadJSrealB($('#lang').text())
     //activate translation to get proper dates
-    translatePage($('#lang').text())
+    //translatePage($('#lang').text())
     
     // affichage selon la langue
     $('#lang').click(function () {
