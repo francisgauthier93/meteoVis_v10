@@ -404,7 +404,8 @@ $(document).ready(function () {
     });
     
     // charger JSrealB lors de l'initialisation
-    loadJSrealB($('#lang').text())
+    var lang=($('#lang').text()=='en')?'fr':'en'
+    loadJSrealB(lang)
     //activate translation to get proper dates
     //translatePage($('#lang').text())
     
