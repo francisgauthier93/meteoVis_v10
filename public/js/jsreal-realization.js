@@ -39,8 +39,6 @@ var MeteoVisRealizer = function(language) {
         var classListLength = classList.length;
         for(var i = 0; i < classListLength; i++)
         {
-        	console.log("language: "+language);
-        	console.log("currentClass: "+currentClass);
             currentClass = classList[i];
             if(instruction[language][currentClass] !== undefined)
             {
