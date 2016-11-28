@@ -63,25 +63,21 @@ String.prototype.toDate = function()
 
 Date.prototype.toLocalDate = function(sLanguage)
 {
-    return ((sLanguage === "fr") ? this.toDateFr() : this.toDateEn());
+    //return ((sLanguage === "fr") ? this.toDateFr() : this.toDateEn());
+	return DT(this).dOpt({rtime:true}).cap().toString();
 };
 
 Date.prototype.toDateFr = function()
 {
     //var noYear = (this.getHours() === 0);
-	var noYear=true;
-	//var sDateFr = DT(this).dOpt({year: !(noYear), hour: false, minute: false, second: false, det:false}).cap(true);
-    var sDateFr = DT(this).dOpt({rtime:true}).cap();
+	var sDateFr = DT(this).dOpt({rtime:true}).cap();
     return sDateFr.toString();
 };
 
 Date.prototype.toDateEn = function()
 {
 	//var noYear = (this.getHours() === 0);
-	//console.log("hours:"+this.getHours())
-	var noYear=true;
-	//var sDateEn = DT(this).dOpt({det:false,hour:false,year:!(noYear)}).cap(true);
-	var sDateEn = S(DT(this).dOpt({rtime:true}));
+	var sDateEn = DT(this).dOpt({rtime:true}).cap();
 	return sDateEn.toString();
     //return this.toLocaleString();
 };
