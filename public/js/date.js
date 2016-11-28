@@ -61,10 +61,16 @@ String.prototype.toDate = function()
     return null;
 };
 
-Date.prototype.toLocalDate = function(sLanguage)
+Date.prototype.toLocalDate = function(sLanguage,dateFormat)
 {
+	if(dateFormat == "present"){
+		var localDate = DT(this).dOpt({year: false, month: true, date: true, day: false, hour: true}).cap()
+	}
+	else{
+		var localDate = DT(this).dOpt({rtime: true}).cap()
+	}
     //return ((sLanguage === "fr") ? this.toDateFr() : this.toDateEn());
-	return DT(this).dOpt({rtime:true}).cap().toString();
+	return .toString();
 };
 
 Date.prototype.toDateFr = function()

@@ -64,7 +64,9 @@ function updateElementText(oElement, sLanguage)
         oElement.attr("data-original-translation", sOriginalText);
     }
     
-    var sTranslation = translateText(sOriginalText, sLanguage);
+    var dateFormat = oElement.attr("date-format");
+    
+    var sTranslation = translateText(sOriginalText, sLanguage, dateFormat);
     
     oElement.text(sTranslation);
     oElement.html(sTranslation);
@@ -85,7 +87,7 @@ function updateAttributeText(oElement, sAttributeName, sLanguage)
     oElement.attr(sAttributeName, sTranslation);
 }
 
-function translateText(sOriginalText, sLanguage)
+function translateText(sOriginalText, sLanguage, dateFormat)
 {
     if(sOriginalText === "")
     {
@@ -94,8 +96,7 @@ function translateText(sOriginalText, sLanguage)
     
     if(sOriginalText.isDate())
     {
-    	console.log(sOriginalText)
-        return sOriginalText.toDate().toLocalDate(sLanguage);
+        return sOriginalText.toDate().toLocalDate(sLanguage,dateFormat);
     }
     
     var aDigitList = sOriginalText.match(/\d+/g);
