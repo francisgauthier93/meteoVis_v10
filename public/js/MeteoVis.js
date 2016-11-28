@@ -114,11 +114,13 @@ function setLanguage(l1, $button) {
     
     //Load JSrealB, is defined in jsrealbLoaderFr.php
     loadJSrealB(l1)
-    if(eval(DT('2016-11-22T21:00:00').dOpt({year: false, month: false, date: false, day: true, minute: false, second: false, hour: false}))=="on Tuesday"){
-    	console.log("YES! English correctly loaded")
+    for(var i=0;eval(DT('2016-11-22T21:00:00').dOpt({year: false, month: false, date: false, day: true, minute: false, second: false, hour: false}))!="on Tuesday";i++){
+    	loadJSrealB(l1)
+    	if(i>100){ //break possible infinite loop
+    		console.warn("Could not load correctly JSrealB. Language: "+l1)
+    		break;
+    	}
     }
-
-
     translatePage(l1);
     updateLocationLanguage(l1);
 }
@@ -403,6 +405,8 @@ $(document).ready(function () {
     
     // charger JSrealB lors de l'initialisation
     loadJSrealB($('#lang').text())
+    //activate translation to get proper dates
+    translatePage($('#lang').text())
     
     // affichage selon la langue
     $('#lang').click(function () {

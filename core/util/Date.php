@@ -221,7 +221,6 @@ class Date
     public static function getDisplayableDate($sFullDateUTC)
     {
         $oDateTime = self::getLocalDateTimeFromUtc($sFullDateUTC);
-        echo 'dispalyable date: ' . $oDateTime->format(Config::get('format.date.int.date'));
         return $oDateTime->format(Config::get('format.date.int.date'));
     }
     
