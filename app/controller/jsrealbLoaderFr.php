@@ -30,23 +30,6 @@
 		
 		JSrealB.Config.get("lexicon")["alternance"] = {"N": {"g":"f","tab": ["n17"]}};
 		
-                
-                var phrase = 
-                <?php 
-                	$jsonString = file_get_contents('public/data/additional-info-phrases.json');
-                	$phrases = json_decode($jsonString, true);
-                	
-					$phrases7 = "[";
-					for($i=0;$i<7;$i++){
-						if($i==0){
-							$phrases7 =  $phrases7 . "\"" . $phrases[$i]. "\"";
-						}else{
-							$phrases7 =  $phrases7 . ",\"" . $phrases[$i] . "\"";
-						}
-						
-					}
-                	echo "$phrases7]";
-                ?>
 
                 for(var i=1; i<8; i++){
                 	$("#forecastTable tr:eq("+i+")").append("<td data-title='Information'>"+eval(phrase[i-1])+"</td>");
@@ -88,6 +71,9 @@
 		    JSrealB.Config.get("lexicon")["km/h"] = {"N": {"tab": ["n4"]}};
 		    JSrealB.Config.get("lexicon")["centimeter"] = {"N": {"tab": ["n1"]}};
 		    JSrealB.Config.get("lexicon")["south"] = {"N": {"tab": ["n4"]}};
+		    JSrealB.Config.get("lexicon")["west"] = JSrealB.Config.get("lexicon")["east"] = {"N": {"tab": ["n4"]}};
+            JSrealB.Config.get("lexicon")["northwest"] = JSrealB.Config.get("lexicon")["northeast"] = {"N": {"tab": ["n4"]}};
+            JSrealB.Config.get("lexicon")["southwest"] = JSrealB.Config.get("lexicon")["southeast"] = {"N": {"tab": ["n4"]}};
 		    
 		}
 

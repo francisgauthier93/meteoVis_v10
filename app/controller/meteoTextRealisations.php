@@ -143,11 +143,11 @@ class MeteoRealisation
 			//cloudCover text
 			$cloudCoverFr = $this->getCloudCoverText($cloudCover,$data,"fr");
 			$cloudCoverEn = $this->getCloudCoverText($cloudCover,$data,"en");
-			$minTemp = $this->getMinMaxTempOneDay('min', $day); //15;
-			$maxTemp = $this->getMinMaxTempOneDay('max', $day); //23;
+			$minTemp = $this->getMinMaxTempOneDay('min', $day); 
+			$maxTemp = $this->getMinMaxTempOneDay('max', $day); 
 			
 			$sevenPhrasesFr[$day]= "S(NP(D('le'),N('journée')),VP(V('être').t('f'),$cloudCoverFr),C('et'),NP(D('le'),N('température')),VP(V('varier').t('f'),P('entre'),CP(NO($minTemp),C('et'),NO($maxTemp))))";
-			$sevenPhrasesEn[$day]= "S(NP(D('the'),N('day')),VP(V('be').t('f'),$cloudCoverEn),C('and'),NP(D('the'),N('temperature')),VP(V('vary').t('f'),P('between'),CP(NO($minTemp),C('et'),NO($maxTemp))))";
+			$sevenPhrasesEn[$day]= "S(NP(D('the'),N('day')),VP(V('be').t('f'),$cloudCoverEn),C('and'),NP(D('the'),N('temperature')),VP(V('vary').t('f'),P('between'),CP(NO($minTemp),C('and'),NO($maxTemp))))";
 		}
 		
 		$newJsonString = json_encode($sevenPhrasesFr);
