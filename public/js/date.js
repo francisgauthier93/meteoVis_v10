@@ -70,7 +70,7 @@ Date.prototype.toLocalDate = function(sLanguage,dateFormat)
 		var localDate = DT(this).dOpt({rtime: true}).cap()
 	}
     //return ((sLanguage === "fr") ? this.toDateFr() : this.toDateEn());
-	return .toString();
+	return localDate.toString();
 };
 
 Date.prototype.toDateFr = function()
