@@ -117,7 +117,7 @@ class MeteoController extends BaseAppController
         for($i = 0; $i < $iNbDays; $i++)
         {
             $sForecast .= '<tr>'
-                    . '<td data-title="Day" data-original-translation>' . Date::getDisplayableDate(Date::getDateFromNow($i))/*Date::getDisplayableDate(Date::getDateFromNow($i))*/ . '</td>'
+                    . '<td data-title="Day" data-original-translation=' . Date::getDisplayableDate(Date::getDateFromNow($i)) . '>' . /*Date::getDisplayableDate(Date::getDateFromNow($i)).*/ '</td>'
                     . '<td align="center" data-title="Minimum">'.$meteoReal->getMinMaxTempOneDay('min', $i).'</td>'
                     . '<td data-title="Maximum">'.$meteoReal->getMinMaxTempOneDay('max', $i).'</td>'
                     . '<td data-title="Information"></td>'
