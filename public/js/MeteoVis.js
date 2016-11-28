@@ -114,6 +114,10 @@ function setLanguage(l1, $button) {
     
     //Load JSrealB, is defined in jsrealbLoaderFr.php
     loadJSrealB(l1)
+    if(eval(DT('2016-11-22T21:00:00').dOpt({year: false, month: false, date: false, day: true, minute: false, second: false, hour: false}))=="on Tuesday"){
+    	console.log("YES! English correctly loaded")
+    }
+
 
     translatePage(l1);
     updateLocationLanguage(l1);
@@ -396,6 +400,9 @@ $(document).ready(function () {
             $(this).text("°F");
         }
     });
+    
+    // charger JSrealB lors de l'initialisation
+    loadJSrealB($('#lang').text())
     
     // affichage selon la langue
     $('#lang').click(function () {
