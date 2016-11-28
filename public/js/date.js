@@ -71,7 +71,7 @@ Date.prototype.toDateFr = function()
     //var noYear = (this.getHours() === 0);
 	var noYear=true;
 	//var sDateFr = DT(this).dOpt({year: !(noYear), hour: false, minute: false, second: false, det:false}).cap(true);
-    var sDateFr = S(DT(this).dOpt({year: !(noYear), hour: false, minute: false, second: false, det:false}),DT(this).dOpt({rtime:true}).en('('));
+    var sDateFr = S(DT(this).dOpt({rtime:true}));
     return sDateFr.toString();
 };
 
@@ -81,7 +81,7 @@ Date.prototype.toDateEn = function()
 	//console.log("hours:"+this.getHours())
 	var noYear=true;
 	//var sDateEn = DT(this).dOpt({det:false,hour:false,year:!(noYear)}).cap(true);
-	var sDateEn = S(DT(this).dOpt({year: !(noYear), hour: false, minute: false, second: false, det:false}),DT(this).dOpt({rtime:true}).en('('));
+	var sDateEn = S(DT(this).dOpt({rtime:true}));
 	return sDateEn.toString();
     //return this.toLocaleString();
 };
