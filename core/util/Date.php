@@ -65,6 +65,7 @@ class Date
     // Get current date + X days
     public static function getDateFromNow($iDayAdded)
     {
+    	echo 'date from now: ' . Date::getUTCFullDate(strtotime('+' . Number::getInt($iDayAdded) . 'days', time()));
         return Date::getUTCFullDate(strtotime('+' . Number::getInt($iDayAdded) . 'days', time()));
     }
     
