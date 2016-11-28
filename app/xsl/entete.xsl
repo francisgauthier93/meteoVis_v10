@@ -57,7 +57,7 @@
             </h1>
         </div>
         <div class="col-sm-4 h1">
-            <small data-original-translation="">
+            <small dateFormat="present" data-original-translation="">
                 <xsl:value-of select="/siteData/currentConditions[1]/dateTime[2]/year"/>
                 <xsl:text>-</xsl:text>
                 <xsl:value-of select="/siteData/currentConditions[1]/dateTime[2]/month"/>
