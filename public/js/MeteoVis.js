@@ -416,7 +416,8 @@ $(document).ready(function () {
 
     });
     //initialisation de la langue
-    setLanguage($('#lang').text(), $('#lang'));    
+    var currLang = ($('#lang').text() == 'fr')?'en':'fr';
+    setLanguage(currLang);    
 
     // changement du nombre de jours
     $('select#nbdays').change(function (e) { 
