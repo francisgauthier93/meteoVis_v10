@@ -415,7 +415,9 @@ $(document).ready(function () {
         setLanguage($(this).text(), $(this));
 
     });
-    
+    //initialisation de la langue
+    setLanguage($('#lang').text(), $('#lang'));    
+
     // changement du nombre de jours
     $('select#nbdays').change(function (e) { 
         currNbJours = $(this).val();
