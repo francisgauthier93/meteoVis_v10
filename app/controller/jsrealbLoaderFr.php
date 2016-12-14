@@ -1,4 +1,4 @@
-<script type="text/javascript" charset="utf-8" src="JSrealB/static/js/JSrealB.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://www-etud.iro.umontreal.ca/%7Egauthif/web_page_gauthif/JSrealB-EnFr.js"></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"
         type="text/javascript"></script>
  <script type="text/javascript">
