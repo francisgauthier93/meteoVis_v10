@@ -39,15 +39,7 @@
 */
 
     var loadJSrealB = function(language){
-	//JSrealLoader({
-    //            language: language,
-    //            lexiconUrl: (language=="fr")?URL.lexicon.fr:URL.lexicon.en,
-    //            ruleUrl: (language=="fr")?URL.rule.fr:URL.rule.en,
-    //            featureUrl: URL.feature
-    //        }, function() {
-    //            console.log((language=="fr")?"Langue française chargée":"English language loaded");
-
-                //Ajouts aux lexique:
+	
 		if(language=="fr"){
 			loadFr();
 		    JSrealB.Config.get("lexicon")["partiellement"] = {"Adv": {"tab": ["av"]}};
@@ -117,8 +109,6 @@
         	for(var i=1; i<8; i++){
                 $("#forecastTable").find("tr").eq(i).find("td")[3].textContent = (language=="fr")?eval(phraseFr[i-1]):eval(phraseEn[i-1]);
         	}
-    			
-     	});
     };
 
 </script>
