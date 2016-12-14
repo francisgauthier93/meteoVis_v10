@@ -39,16 +39,17 @@
 */
 
     var loadJSrealB = function(language){
-	JSrealLoader({
-                language: language,
-                lexiconUrl: (language=="fr")?URL.lexicon.fr:URL.lexicon.en,
-                ruleUrl: (language=="fr")?URL.rule.fr:URL.rule.en,
-                featureUrl: URL.feature
-            }, function() {
-                console.log((language=="fr")?"Langue française chargée":"English language loaded");
+	//JSrealLoader({
+    //            language: language,
+    //            lexiconUrl: (language=="fr")?URL.lexicon.fr:URL.lexicon.en,
+    //            ruleUrl: (language=="fr")?URL.rule.fr:URL.rule.en,
+    //            featureUrl: URL.feature
+    //        }, function() {
+    //            console.log((language=="fr")?"Langue française chargée":"English language loaded");
 
                 //Ajouts aux lexique:
 		if(language=="fr"){
+			loadFr();
 		    JSrealB.Config.get("lexicon")["partiellement"] = {"Adv": {"tab": ["av"]}};
             JSrealB.Config.get("lexicon")["nuageux"] = {"A": {"tab": ["n54"]}};
             JSrealB.Config.get("lexicon")["alternance"] = {"N": {"g":"f","tab": ["n17"]}};
@@ -61,7 +62,8 @@
             JSrealB.Config.get("lexicon")["nord-ouest"] = JSrealB.Config.get("lexicon")["nord-est"] = {"N": {"tab": ["n35"]}};
             JSrealB.Config.get("lexicon")["sud-ouest"] = JSrealB.Config.get("lexicon")["sud-est"] = {"N": {"tab": ["n35"]}};            
 		}
-		else{                
+		else{       
+			loadEn();         
 		    JSrealB.Config.get("lexicon")["sunny"] = {"A": {"tab": ["a2"]}};
 		    JSrealB.Config.get("lexicon")["mainly"] = {"Adv": {"tab": ["b1"]}};
 		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
