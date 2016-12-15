@@ -146,8 +146,8 @@ class MeteoRealisation
 			$minTemp = $this->getMinMaxTempOneDay('min', $day); 
 			$maxTemp = $this->getMinMaxTempOneDay('max', $day); 
 			
-			$sevenPhrasesFr[$day]= "S(NP(D('le'),N('journée')),VP(V('être').t('f'),$cloudCoverFr),C('et'),NP(D('le'),N('température')),VP(V('varier').t('f'),P('entre'),CP(NO($minTemp),C('et'),NO($maxTemp))))";
-			$sevenPhrasesEn[$day]= "S(NP(D('the'),N('day')),VP(V('be').t('f'),$cloudCoverEn),C('and'),NP(D('the'),N('temperature')),VP(V('vary').t('f'),P('between'),CP(NO($minTemp),C('and'),NO($maxTemp))))";
+			$sevenPhrasesFr[$day]= "S(NP(D('le'),N('journée')),VP(V('être').t('f'),$cloudCoverFr),C('et'),NP(D('le'),N('température')),VP(V('varier').t('f'),P('entre'),CP(NO($minTemp).tag('span',{'class':'celsius'}),C('et'),NO($maxTemp))))";
+			$sevenPhrasesEn[$day]= "S(NP(D('the'),N('day')),VP(V('be').t('f'),$cloudCoverEn),C('and'),NP(D('the'),N('temperature')),VP(V('vary').t('f'),P('between'),CP(NO($minTemp).tag('span',{'class':'celsius'}),C('and'),NO($maxTemp))))";
 		}
 		
 		$newJsonString = json_encode($sevenPhrasesFr);
