@@ -54,8 +54,8 @@
         <thead class="cf">
             <tr>
                 <th data-original-translation="">Day</th>
-                <th data-original-translation="">Minimum temperature</th>
-                <th data-original-translation="">Maximum temperature</th>
+                <th data-original-translation="" style="table-layout: fixed;width: 100px;">Minimum temperature</th>
+                <th data-original-translation="" style="table-layout: fixed;width: 100px;">Maximum temperature</th>
                 <th data-original-translation="">Additional information</th>
             </tr>
         </thead>
