@@ -98,7 +98,7 @@
 		},
 		"temperature": {
 			"class": "temperature",
-			"default": "S(DT('*|temperature-date|*').dOpt({year: false, month: false, date: false, day: false, minute: false, second: false}).a(','),S(Pro('he'),VP(V('be'),NO(*|temperature-value|*),'\u00b0C').t('f')))"
+			"default": "S(DT('*|temperature-date|*').dOpt({year: false, month: false, date: false, day: false, minute: false, second: false}).a(','),S(Pro('I').g('n'),VP(V('be'),NO(*|temperature-value|*),'\u00b0C').t('f')))"
 		},
 		"cloudCond": {
 			"class": "cloudCond",

@@ -414,14 +414,7 @@ $(document).ready(function () {
     $('#lang').click(function () {
         setLanguage($(this).text(), $(this));
 
-    });
-    //initialisation de la langue
-    //var currLang = ($('#lang').text() == 'fr')?'en':'fr';
-    //setLanguage(currLang);
-    //Patch pour régler l'initialisation de la langue, qui se fait mal au début, mais bien après quelques traductions
-    for(var i=0;i<4;i++){
-	setLanguage($('#lang').text(), $('#lang'));
-    }    
+    });   
 
     // changement du nombre de jours
     $('select#nbdays').change(function (e) { 
