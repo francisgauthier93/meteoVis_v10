@@ -39,6 +39,7 @@
 		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
 		    JSrealB.Config.get("lexicon")["cloudy"] = {"A": {"tab": ["a2"]}};
 		    JSrealB.Config.get("lexicon")["centimeter"] = {"N": {"tab": ["n1"]}};
+		    JSrealB.Config.get("lexicon")["precipitation"] = {"N": {"tab": ["n1"]}};
 		    JSrealB.Config.get("lexicon")["km/h"] = {"N": {"tab": ["n4"]}};
 		    JSrealB.Config.get("lexicon")["centimeter"] = {"N": {"tab": ["n1"]}};
 		    JSrealB.Config.get("lexicon")["south"] = {"N": {"tab": ["n4"]}};
