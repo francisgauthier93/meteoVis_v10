@@ -83,11 +83,11 @@
                 ?>
 		
 
-       // $(document).ready(function () {
+        $(document).ready(function () {
         	for(var i=1; i<8; i++){
                 $("#forecastTable").find("tr").eq(i).find("td")[3].innerHTML = (language=="fr")?eval(phraseFr[i-1]):eval(phraseEn[i-1]);
         	}
-        //}
+        })
     };
 
 </script>
