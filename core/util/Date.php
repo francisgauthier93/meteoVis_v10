@@ -9,7 +9,6 @@ class Date
 {
     public static function setLocalTimeZoneFromZoneNameFr($sAbbrFr)
     {
-    	echo 'sAbbrFr: '. $sAbbrFr;
         $aTranslateZoneNameFrToEn = array(
             'HNP' => 'PST',
             'HNR' => 'MST',
