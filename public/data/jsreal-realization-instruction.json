@@ -103,19 +103,19 @@
 				"probability-precipitation-value": [{
 					"min": 0,
 					"max": 49,
-					"text": "NP(A('slight'),N('risk'),PP(P('of'),N('rain')))"
+					"text": "NP(A('slight'),N('risk'),PP(P('of'),N('precipitation').n('p'))"
 				}, {
 					"min": 50,
 					"max": 79,
-					"text": "NP(N('risk'),PP(P('of'),N('rain')))"
+					"text": "NP(N('risk'),PP(P('of'),N('precipitation').n('p'))"
 				}, {
 					"min": 80,
 					"max": 89,
-					"text": "NP(A('high'),N('risk'),PP(P('of'),N('rain')))"
+					"text": "NP(A('high'),N('risk'),PP(P('of'),N('precipitation').n('p'))"
 				}, {
 					"min": 90,
 					"max": 100,
-					"text": "NP(A('constant'),N(''rain'))"
+					"text": "NP(A('constant'),N('precipitaion')).n('p')"
 				}]
 			}
 		},
