@@ -35,7 +35,7 @@
 				"probability-precipitation-value": [{
 					"min": 0,
 					"max": 49,
-					"text": "NP(A('faible'),N('risque')),PP(P('de'),N('pr\u00e9cipitation').n('p'))"
+					"text": "NP(A('faible'),N('risque'),PP(P('de'),N('pr\u00e9cipitation').n('p')))"
 				}, {
 					"min": 50,
 					"max": 79,
@@ -95,6 +95,29 @@
 		"accumCond": {
 			"class": "accumCond",
 			"default": "S(DT('*|accumulation-date|*').dOpt({year: false, day: false, hour: false, minute: false, second: false}).a(','),N('*|accumulation-type|*'), C(':'), NP(NO(*|accumulation-amount|*),N('centimeter')).a(','),N('total'), C(':'), NP(NO(*|accumulation-total|*), N('centimeter')))"
+		},
+		"percentPrecipCond": {
+			"class": "percentPrecipCond",
+			"default": "",
+			"alternative": {
+				"probability-precipitation-value": [{
+					"min": 0,
+					"max": 49,
+					"text": "NP(A('slight'),N('risk'),PP(P('of'),N('rain')))"
+				}, {
+					"min": 50,
+					"max": 79,
+					"text": "NP(N('risk'),PP(P('of'),N('rain')))"
+				}, {
+					"min": 80,
+					"max": 89,
+					"text": "NP(A('high'),N('risk'),PP(P('of'),N('rain')))"
+				}, {
+					"min": 90,
+					"max": 100,
+					"text": "NP(A('constant'),N(''rain'))"
+				}]
+			}
 		},
 		"temperature": {
 			"class": "temperature",

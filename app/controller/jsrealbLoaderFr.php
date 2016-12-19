@@ -14,29 +14,6 @@
                 feature: "JSrealB/data/feature.min.json"
             };
 
-/*    JSrealLoader({
-                language: "fr",
-                lexiconUrl: URL.lexicon.fr,
-                ruleUrl: URL.rule.fr,
-                featureUrl: URL.feature
-            }, function() {
-                console.log("Langue française chargée");
-
-                //Ajouts aux lexique:
-                
-		JSrealB.Config.get("lexicon")["partiellement"] = {"Adv": {"tab": ["av"]}};
-                JSrealB.Config.get("lexicon")["nuageux"] = {"A": {"tab": ["n54"]}};
-                JSrealB.Config.get("lexicon")["alternance"] = {"N": {"g":"f","tab": ["n17"]}};
-		
-		JSrealB.Config.get("lexicon")["alternance"] = {"N": {"g":"f","tab": ["n17"]}};
-		
-
-                for(var i=1; i<8; i++){
-                	$("#forecastTable tr:eq("+i+")").append("<td data-title='Information'>"+eval(phrase[i-1])+"</td>");
-                }
-    			
-            });
-*/
 
     var loadJSrealB = function(language){
 	
@@ -106,9 +83,11 @@
                 ?>
 		
 
+        $(document).ready(function () {
         	for(var i=1; i<8; i++){
-                $("#forecastTable").find("tr").eq(i).find("td")[3].textContent = (language=="fr")?eval(phraseFr[i-1]):eval(phraseEn[i-1]);
+                $("#forecastTable").find("tr").eq(i).find("td")[3].innerHTML = (language=="fr")?eval(phraseFr[i-1]):eval(phraseEn[i-1]);
         	}
+        }
     };
 
 </script>
