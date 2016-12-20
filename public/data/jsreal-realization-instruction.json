@@ -115,7 +115,7 @@
 				}, {
 					"min": 90,
 					"max": 100,
-					"text": "NP(A('constant'),N('precipitaion')).n('p')"
+					"text": "NP(A('constant'),N('precipitation')).n('p')"
 				}]
 			}
 		},

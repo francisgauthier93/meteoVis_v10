@@ -65,6 +65,9 @@ class WeatherView
                 . $sCityId . '_f.' . Config::get('file.extension.xml');
         try
         {
+        	////Remove after debug
+        	throw new FileNotFoundException('File : ' . $sLocalSourceFileFr);
+        	/////
             if(Filesystem::exists($sLocalSourceFileFr))
             {
                 $sSourceFileFr = $sLocalSourceFileFr;
