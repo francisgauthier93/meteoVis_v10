@@ -124,7 +124,7 @@ class WeatherView
         try
         {
         	////Remove after debug
-        	throw new FileNotFoundException('File : ' . $sLocalSourceFileFr);
+        	//throw new FileNotFoundException('File : ' . $sLocalSourceFileFr);
         	/////
             $sSourceFileEn = $sLocalSourceFileEn;
             if(Filesystem::exists($sLocalSourceFileEn))
