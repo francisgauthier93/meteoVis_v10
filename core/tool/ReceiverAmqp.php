@@ -2,7 +2,8 @@
 
 //namespace Acme\AmqpWrapper;
 
-use PhpAmqpLib\Connection\AMQPConnection;
+//use PhpAmqpLib\Connection\AMQPConnection;
+use PhpAmqpLib\Connection\AMQPStreamConnection;
 
 class ReceiverAmqp
 {
@@ -18,7 +19,7 @@ class ReceiverAmqp
         $exchange_key_meteocode = 'v00.dd.notify.meteocode.*.cmml.#'; // meteocode files
         $exchange_key_citypage = 'v00.dd.notify.citypage_weather.xml.*.#'; // citypage files
 
-        $connection = new AMQPConnection(
+        $connection = new AMQPStreamConnection(
                 'dd.weather.gc.ca', #host
                 5672, #port
                 'anonymous', #user
