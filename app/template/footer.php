@@ -42,18 +42,6 @@
 <?php echo Import::js('../web_page_gauthif/JSrealB-EnFr.js'); ?>
 
 <script type="text/javascript">
-/* var URL = {
-                lexicon:  {
-                    fr: "JSrealB/data/lex-fr.min.json",
-                    en: "JSrealB/data/lex-en.min.json"
-                },
-                rule: {
-                    fr: "JSrealB/data/rule-fr.min.json",
-                    en: "JSrealB/data/rule-en.min.json"
-                },
-                feature: "JSrealB/data/feature.min.json"
-            };
-*/
 
     var loadJSrealB = function(language){
 	
@@ -90,8 +78,6 @@
 		}
 
 	$(document).ready(function () {
-		
-		<?php echo 'console.log("getting content from json<br/>");' ?>
 
 		var phraseEn = 
                 <?php 
