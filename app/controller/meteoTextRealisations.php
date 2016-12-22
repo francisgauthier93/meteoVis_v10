@@ -150,15 +150,16 @@ class MeteoRealisation
 			$sevenPhrasesEn[$day]= "S(NP(D('the'),N('day')),VP(V('be').t('f'),$cloudCoverEn),C('and'),NP(D('the'),N('temperature')),VP(V('vary').t('f'),P('between'),CP(NO($minTemp).tag('span',{'class':'celsius'}),C('and'),NO($maxTemp).tag('span',{'class':'celsius'}))))";
 		}
 		
-		$newJsonString = json_encode($sevenPhrasesFr);
-		file_put_contents('public/data/additional-info-phrasesFr.json', $newJsonString);
-		$newJsonString = json_encode($sevenPhrasesEn);
-		file_put_contents('public/data/additional-info-phrasesEn.json', $newJsonString);
+		echo 'putting content to json<br/>';
+		$newJsonStringFr = json_encode($sevenPhrasesFr);
+		file_put_contents('public/data/additional-info-phrasesFr.json', $newJsonStringFr);
+		$newJsonStringEn = json_encode($sevenPhrasesEn);
+		file_put_contents('public/data/additional-info-phrasesEn.json', $newJsonStringEn);
 		
 		//
-		
-		$newJsonString = json_encode($data);
-		file_put_contents('public/data/jsreal-realization-instruction.json', $newJsonString);
+		//No need to put bak in file
+		//$newJsonString = json_encode($data);
+		//file_put_contents('public/data/jsreal-realization-instruction.json', $newJsonString);
 	}
 	
 	

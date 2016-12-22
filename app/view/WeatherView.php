@@ -65,9 +65,7 @@ class WeatherView
                 . $sCityId . '_f.' . Config::get('file.extension.xml');
         try
         {
-        	////Remove after debug
-        	throw new FileNotFoundException('File : ' . $sLocalSourceFileFr);
-        	/////
+        
             if(Filesystem::exists($sLocalSourceFileFr))
             {
                 $sSourceFileFr = $sLocalSourceFileFr;
@@ -121,30 +119,32 @@ class WeatherView
         $sLocalSourceFileEn = Config::get('path.real.root') 
                 . Config::get('path.relative.root_to_citypage')
                 . $sCityId . '_e.' . Config::get('file.extension.xml');
-        try
-        {
-        	////Remove after debug
-        	//throw new FileNotFoundException('File : ' . $sLocalSourceFileFr);
-        	/////
-            $sSourceFileEn = $sLocalSourceFileEn;
-            if(Filesystem::exists($sLocalSourceFileEn))
-            {
-                $sSourceFileEn = $sLocalSourceFileEn;
-                if(!@$xml->load($sLocalSourceFileEn))
-                {
-                    throw new InvalidXmlException('File : ' . $sLocalSourceFileEn);
-                }
-            }
-            else
-            {
-                throw new FileNotFoundException('File : ' . $sLocalSourceFileEn);
-            }
-        }
-        catch(Exception $e2)
-        {
+
+	## La prochaine section est là pour utiliser les fichiers locaux au lieu de toujours aller chercher les données sur le web
+	## Pour l'instant, l'actualisation des fichiers locaux coince. Le fichier local est figé sur le 14 octobre 2016...
+	## En attendant de trouver une solution, la section sera mise en commentaire pour toujours aller chercher les fichiers du web        
+	
+	#try
+        #{
+        #    $sSourceFileEn = $sLocalSourceFileEn;
+        #    if(Filesystem::exists($sLocalSourceFileEn))
+        #    {
+        #        $sSourceFileEn = $sLocalSourceFileEn;
+        #        if(!@$xml->load($sLocalSourceFileEn))
+        #        {
+        #            throw new InvalidXmlException('File : ' . $sLocalSourceFileEn);
+        #        }
+        #    }
+        #    else
+        #    {
+        #        throw new FileNotFoundException('File : ' . $sLocalSourceFileEn);
+        #    }
+        #}
+        #catch(Exception $e2)
+        #{
             $sSourceFileEn = 'http://dd.weatheroffice.gc.ca/citypage_weather/xml/' . $province . '/' . $sCityId . '_e.xml';
             $xml->load($sSourceFileEn);            
-        }
+        #}
 
         $oXmlDocument = simplexml_import_dom($xml);
         Date::setLocalTimeZoneFromZoneNameEn(

@@ -112,7 +112,7 @@ function setLanguage(l1, $button) {
     // patcher le placeholder que je n'arrive pas à faire avec le code de langue habituel
 //    $("#inVille").attr("placeholder", l1 == "fr" ? "Changer de ville" : "Change city");
     
-    //Load JSrealB, is defined in jsrealbLoaderFr.php
+    //Load JSrealB, is defined in jsrealbLoader.php
     loadJSrealB(l1)
 //    for(var i=0;eval(DT('2016-11-22T21:00:00').dOpt({year: false, month: false, date: false, day: true, minute: false, second: false, hour: false}))!="on Tuesday";i++){
 //    	loadJSrealB(l1)
