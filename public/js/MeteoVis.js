@@ -397,12 +397,6 @@ $(document).ready(function () {
         }
     });
     
-    // charger JSrealB lors de l'initialisation (inutile)
-    //var lang=($('#lang').text()=='en')?'fr':'en'
-    //loadJSrealB(lang)
-    
-    //activate translation to get proper dates (creates a bug)
-    //translatePage($('#lang').text())
     
     // affichage selon la langue
     $('#lang').click(function () {
