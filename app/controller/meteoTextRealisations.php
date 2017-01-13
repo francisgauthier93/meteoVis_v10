@@ -59,63 +59,67 @@ class MeteoRealisation
 	}
 	
 	public function getMinMaxTempOneDay($minOrMax, $day, $unitBool = false){
-		return 'N/A';
+		//return 'N/A';
 		try{
 			$aAirTemperatureList = $this->meteocode->getAirTemperatureList();
 				
 			$oAirTemperature0 = $aAirTemperatureList[0];
 			$startDate = Date::getDisplayableHour($oAirTemperature0->getStartDate());
-			$firstDelay = (integer) substr($startDate, 0, 2);
+		} catch (Exception $e) {
+				return 'N/A';
+		}
+		
+		$firstDelay = (integer) substr($startDate, 0, 2);
 			
-			if(!empty($aAirTemperatureList))
+		if(!empty($aAirTemperatureList))
+		{
+			$minTemp = null;
+			$maxTemp = null;
+			$i = ($day == 0)? 0 : (24-$firstDelay)+24*($day-1);
+			$tStop = (24-$firstDelay)+24*$day;
+			if($tStop > count($aAirTemperatureList)){$tStop = count($aAirTemperatureList);}
+			for(; $i < $tStop ; $i++)
 			{
-				$minTemp = null;
-				$maxTemp = null;
-				$i = ($day == 0)? 0 : (24-$firstDelay)+24*($day-1);
-				$tStop = (24-$firstDelay)+24*$day;
-				if($tStop > count($aAirTemperatureList)){$tStop = count($aAirTemperatureList);}
-				for(; $i < $tStop ; $i++)
-				{
-					$oAirTemperature = $aAirTemperatureList[$i];
-					$sDate = $oAirTemperature->getStartDate();
-					if($maxTemp == null){
-						$maxTemp = $oAirTemperature->getMaxValue();
-						$minTemp = $oAirTemperature->getMinValue();
-					}
-					else{
-						$max= $oAirTemperature->getMaxValue();
-						$min= $oAirTemperature->getMinValue();
-						if($max > $maxTemp){
-							$maxTemp = $max;
-						}
-						if($min < $minTemp){
-							$minTemp = $min;
-						}
-					}
-				}
-			}
-			if($unitBool == true){
-				$tempUnit = $oAirTemperature0->getUnit();
-				$tempUnitString = ($tempUnit == "celsius")?"°C":"°F";
-				if($minOrMax == 'min'){;
-				return $minTemp . " " . $tempUnitString;
-				}
-				else if($minOrMax == 'max'){
-					return $maxTemp . " " . $tempUnitString;
+				$oAirTemperature = $aAirTemperatureList[$i];
+				$sDate = $oAirTemperature->getStartDate();
+				if($maxTemp == null){
+					$maxTemp = $oAirTemperature->getMaxValue();
+					$minTemp = $oAirTemperature->getMinValue();
 				}
 				else{
-					return null;
-				}
-			}else{
-				if($minOrMax == 'min'){
-					return round($minTemp);
-				}else{
-					return round($maxTemp);
+					$max= $oAirTemperature->getMaxValue();
+					$min= $oAirTemperature->getMinValue();
+					if($max > $maxTemp){
+						$maxTemp = $max;
+					}
+					if($min < $minTemp){
+						$minTemp = $min;
+					}
 				}
 			}
-		} catch (Exception $e) {
-			return 'N/A';
 		}
+		if($unitBool == true){
+			$tempUnit = $oAirTemperature0->getUnit();
+			$tempUnitString = ($tempUnit == "celsius")?"°C":"°F";
+			if($minOrMax == 'min'){;
+			return $minTemp . " " . $tempUnitString;
+			}
+			else if($minOrMax == 'max'){
+				return $maxTemp . " " . $tempUnitString;
+			}
+			else{
+				return null;
+			}
+		}else{
+			if($minOrMax == 'min'){
+				return round($minTemp);
+			}else{
+				return round($maxTemp);
+			}
+		}
+	
+			
+		
 		
 		
 		
