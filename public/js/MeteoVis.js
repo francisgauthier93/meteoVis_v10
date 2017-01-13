@@ -364,6 +364,7 @@ $(document).ready(function () {
         var villeSelectionnee = $('#inVille').val();
         //test
         localStorage.setItem('lastCitySelect',villeSelectionnee)
+        alert("You've selected: "+villeSelectionnee)
         //
         var prov = regions[villeSelectionnee][0];
         var ville = regions[villeSelectionnee][1];
