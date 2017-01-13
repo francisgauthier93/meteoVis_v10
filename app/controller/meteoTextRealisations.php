@@ -59,6 +59,7 @@ class MeteoRealisation
 	}
 	
 	public function getMinMaxTempOneDay($minOrMax, $day, $unitBool = false){
+		return 'N/A';
 		try{
 			$aAirTemperatureList = $this->meteocode->getAirTemperatureList();
 				
