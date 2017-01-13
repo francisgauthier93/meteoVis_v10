@@ -65,8 +65,11 @@ class MeteoRealisation
 		//error_reporting(E_ALL & ~E_NOTICE);
 		try{
 			$aAirTemperatureList = $this->meteocode->getAirTemperatureList();
-			echo $aAirTemperatureList;
+			//echo $aAirTemperatureList;
 			$oAirTemperature0 = $aAirTemperatureList[0];
+			if ($aAirTemperatureList==[]){
+				echo 'array is empty </br>';
+			}
 			return 'N/A';
 			
 		} catch (Exception $e) {
