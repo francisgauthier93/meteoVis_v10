@@ -62,12 +62,12 @@ class MeteoRealisation
 	public function getMinMaxTempOneDay($minOrMax, $day, $unitBool = false){
 		//return 'N/A';
 		//mute the notice
-		error_reporting(E_ALL & ~E_NOTICE);
+		//error_reporting(E_ALL & ~E_NOTICE);
 		try{
 			$aAirTemperatureList = $this->meteocode->getAirTemperatureList();
 			echo $aAirTemperatureList;
-			return 'N/A';
 			$oAirTemperature0 = $aAirTemperatureList[0];
+			return 'N/A';
 			
 		} catch (Exception $e) {
 				return 'N/A';
