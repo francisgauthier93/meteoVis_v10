@@ -64,11 +64,12 @@ class MeteoRealisation
 			$aAirTemperatureList = $this->meteocode->getAirTemperatureList();
 				
 			$oAirTemperature0 = $aAirTemperatureList[0];
-			$startDate = Date::getDisplayableHour($oAirTemperature0->getStartDate());
+			
 		} catch (Exception $e) {
 				return 'N/A';
 		}
 		
+		$startDate = Date::getDisplayableHour($oAirTemperature0->getStartDate());
 		$firstDelay = (integer) substr($startDate, 0, 2);
 			
 		if(!empty($aAirTemperatureList))

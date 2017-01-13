@@ -9,7 +9,7 @@ $(document).ready(function() {
             aTranslationTable = data;
             
             // print page in default language
-            // setLanguage(currLang, null);
+            setLanguage(currLang, null);
     
         }).fail(function() {
             alert("Failed to translate.");
