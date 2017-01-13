@@ -6,7 +6,6 @@ class MeteoRealisation
 	}
 	
 	public function getMeteoInfoOneDay($choice,$day){
-		return 'N/A';
 		switch ($choice) {
 			case "minTemp":
 			case "maxTemp":
@@ -18,7 +17,10 @@ class MeteoRealisation
 			default:
 				break;			
 		}
-		
+		if ($aList==[]){
+			//echo 'array is empty </br>';
+			return 'N/A';
+		}
 		$aList0 = $aList[0];
 		$startDate = Date::getDisplayableHour($aList0->getStartDate());
 		$firstDelay = (integer) substr($startDate, 0, 2);
@@ -60,22 +62,15 @@ class MeteoRealisation
 	}
 	
 	public function getMinMaxTempOneDay($minOrMax, $day, $unitBool = false){
-		//return 'N/A';
 		//mute the notice
 		//error_reporting(E_ALL & ~E_NOTICE);
-		try{
-			$aAirTemperatureList = $this->meteocode->getAirTemperatureList();
-			//echo $aAirTemperatureList;
-			$oAirTemperature0 = $aAirTemperatureList[0];
-			if ($aAirTemperatureList==[]){
-				echo 'array is empty </br>';
-			}
-			return 'N/A';
-			
-		} catch (Exception $e) {
-				return 'N/A';
-		}
 		
+		$aAirTemperatureList = $this->meteocode->getAirTemperatureList();
+		if ($aAirTemperatureList==[]){
+			//echo 'array is empty </br>';
+			return 'N/A';
+		}
+		$oAirTemperature0 = $aAirTemperatureList[0];
 		$startDate = Date::getDisplayableHour($oAirTemperature0->getStartDate());
 		$firstDelay = (integer) substr($startDate, 0, 2);
 			
