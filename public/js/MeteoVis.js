@@ -298,6 +298,13 @@ $(document).ready(function () {
     // installation du tableau de suggestion des noms de villes    
 //    var villes = [];
 //    var regions = (currLang == "fr" ? regionsFr : regionsEn);
+	
+	//test
+	if(localStorage.getItem('lastCitySelect')!='undefined'){
+		$('#lastSelect').text = localStorage.getItem('lastCitySelect') 
+	}
+	//
+	
     for (var k in regionsFr)
     {
         citiesFr.push(k);
@@ -355,6 +362,9 @@ $(document).ready(function () {
     // adapté de http://stackoverflow.com/questions/9425024/submit-selection-on-bootstrap-typeahead-autocomplete
     $('#inVille').on('typeahead:selected', function (e) {
         var villeSelectionnee = $('#inVille').val();
+        //test
+        localStorage.setItem('lastCitySelect',villeSelectionnee)
+        //
         var prov = regions[villeSelectionnee][0];
         var ville = regions[villeSelectionnee][1];
         var id02 = regions[villeSelectionnee][2];

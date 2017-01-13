@@ -17,10 +17,13 @@ class MeteoRealisation
 			default:
 				break;			
 		}
+		
+		//some cities don't have the required meteocode. Those line handles a possible fatal error:
 		if ($aList==[]){
 			//echo 'array is empty </br>';
 			return 'N/A';
 		}
+		//
 		$aList0 = $aList[0];
 		$startDate = Date::getDisplayableHour($aList0->getStartDate());
 		$firstDelay = (integer) substr($startDate, 0, 2);
@@ -66,10 +69,13 @@ class MeteoRealisation
 		//error_reporting(E_ALL & ~E_NOTICE);
 		
 		$aAirTemperatureList = $this->meteocode->getAirTemperatureList();
+		
+		//some cities don't have the required meteocode. Those line handles a possible fatal error:
 		if ($aAirTemperatureList==[]){
 			//echo 'array is empty </br>';
 			return 'N/A';
 		}
+		//
 		$oAirTemperature0 = $aAirTemperatureList[0];
 		$startDate = Date::getDisplayableHour($oAirTemperature0->getStartDate());
 		$firstDelay = (integer) substr($startDate, 0, 2);
