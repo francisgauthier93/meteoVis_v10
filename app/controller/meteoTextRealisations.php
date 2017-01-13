@@ -6,6 +6,7 @@ class MeteoRealisation
 	}
 	
 	public function getMeteoInfoOneDay($choice,$day){
+		return 'N/A';
 		switch ($choice) {
 			case "minTemp":
 			case "maxTemp":
@@ -59,7 +60,9 @@ class MeteoRealisation
 	}
 	
 	public function getMinMaxTempOneDay($minOrMax, $day, $unitBool = false){
-		//return 'N/A';
+		return 'N/A';
+		//mute the notice
+		error_reporting(E_ALL & ~E_NOTICE);
 		try{
 			$aAirTemperatureList = $this->meteocode->getAirTemperatureList();
 				
