@@ -299,6 +299,9 @@ $(document).ready(function () {
 //    var villes = [];
 //    var regions = (currLang == "fr" ? regionsFr : regionsEn);
 	
+	//Initialisation de la page aux paramètres de l'utilisateur
+	setLanguage(localStorage.getItem('lastLangSelect')=='fr'?'en':'fr', $('#lang'));
+	//
 	//test
 	if(localStorage.getItem('lastCitySelect')!='undefined'){
 		$('#lastSelect').text = localStorage.getItem('lastCitySelect') 
