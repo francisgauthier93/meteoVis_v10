@@ -304,10 +304,10 @@ $(document).ready(function () {
 	//var d = $(this).text();
     if ( localStorage.getItem('lastDegSelect')=== "°C") {
         fromCelsius();
-        $('#deg').text("°C");
+        $('#degres').text("°C");
     } else {
         fromFarenheit();
-        $('#deg').text("°F");
+        $('#degres').text("°F");
     }
 	//
 	//test
