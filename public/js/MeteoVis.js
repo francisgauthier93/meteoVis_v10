@@ -363,8 +363,8 @@ $(document).ready(function () {
     $('#inVille').on('typeahead:selected', function (e) {
         var villeSelectionnee = $('#inVille').val();
         //test
-        var currentLang = $('#lang').val()
-        var currentDeg = $('#degres').val()
+        var currentLang = $('#lang').text()
+        var currentDeg = $('#degres').text()
         localStorage.setItem('lastCitySelect',villeSelectionnee)
         alert("You've selected: "+villeSelectionnee+' avec les param suivants: '+currentLang+','+currentDeg)
         //
