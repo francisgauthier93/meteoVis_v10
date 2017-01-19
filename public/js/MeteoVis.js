@@ -300,7 +300,15 @@ $(document).ready(function () {
 //    var regions = (currLang == "fr" ? regionsFr : regionsEn);
 	
 	//Initialisation de la page aux paramètres de l'utilisateur
-	setLanguage(localStorage.getItem('lastLangSelect')=='fr'?'en':'fr', $('#lang'));
+	setLanguage(localStorage.getItem('lastLangSelect')==='fr'?'en':'fr', $('#lang'));
+	//var d = $(this).text();
+    if ( localStorage.getItem('lastDegSelect')=== "°C") {
+        fromCelsius();
+        $('#deg').text("°C");
+    } else {
+        fromFarenheit();
+        $('#deg').text("°F");
+    }
 	//
 	//test
 	if(localStorage.getItem('lastCitySelect')!='undefined'){
