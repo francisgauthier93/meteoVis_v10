@@ -303,6 +303,7 @@ $(document).ready(function () {
 	if(localStorage.getItem('lastCitySelect')!='undefined'){
 		$('#lastSelect').text = localStorage.getItem('lastCitySelect') 
 	}
+	console.log('its called')
 	//
 	
     for (var k in regionsFr)
@@ -366,6 +367,9 @@ $(document).ready(function () {
         var currentLang = $('#lang').text()
         var currentDeg = $('#degres').text()
         localStorage.setItem('lastCitySelect',villeSelectionnee)
+        localStorage.setItem('lastLangSelect',currentLang)
+        localStorage.setItem('lastDegSelect',currentDeg)
+        
         alert("You've selected: "+villeSelectionnee+' avec les param suivants: '+currentLang+','+currentDeg)
         //
         var prov = regions[villeSelectionnee][0];
