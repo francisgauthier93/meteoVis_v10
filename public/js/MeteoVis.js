@@ -304,6 +304,9 @@ $(document).ready(function () {
 		$('#lastSelect').text = localStorage.getItem('lastCitySelect') 
 	}
 	console.log('its called')
+	console.log(localStorage.getItem('lastCitySelect'))
+	console.log(localStorage.getItem('lastLangSelect'))
+	console.log(localStorage.getItem('lastDegSelect'))
 	//
 	
     for (var k in regionsFr)
