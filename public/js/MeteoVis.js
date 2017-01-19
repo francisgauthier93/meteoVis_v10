@@ -363,8 +363,10 @@ $(document).ready(function () {
     $('#inVille').on('typeahead:selected', function (e) {
         var villeSelectionnee = $('#inVille').val();
         //test
+        var currentLang = $('#lang').val()
+        var currentDeg = $('#degres').val()
         localStorage.setItem('lastCitySelect',villeSelectionnee)
-        alert("You've selected: "+villeSelectionnee)
+        alert("You've selected: "+villeSelectionnee+' avec les param suivants: '+currentLang+','+currentDeg)
         //
         var prov = regions[villeSelectionnee][0];
         var ville = regions[villeSelectionnee][1];
