@@ -302,6 +302,9 @@ $(document).ready(function () {
 	//Initialisation de la page aux paramètres de l'utilisateur
 	setLanguage(localStorage.getItem('lastLangSelect'), $('#lang'));
 	//var d = $(this).text();
+	fromFarenheit();
+    $('#degres').text("°F");
+    
     if ( localStorage.getItem('lastDegSelect')=== "°F") {
         fromCelsius();
         $('#degres').text("°C");
