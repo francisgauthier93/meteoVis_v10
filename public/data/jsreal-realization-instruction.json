@@ -1,1 +1,158 @@
-{"fr":{"startDay":"NP(D('le'),N('journ\u00e9e')),VP(V('\u00eatre').t('f'),*|cloud-cover-value|*)","conjAnd":"C('et')","startTemp":"NP(D('le'),N('temp\u00e9rature')),VP(V('varier').t('f')),P('entre'),NO(*|temperature-min|*),C('et'),NO(*|temperature-max|*)","startTemp2":"NP(D('le'),N('temp\u00e9rature')),VP(V('varier').t('f')),P('entre'),$1,C('et'),$2","windCond":{"class":"windCond","default":"S(P('de'),DT('*|wind-start-date|*').dOpt({year: false, month: false, date: false, day: false, minute: false, second: false, det:false}),DT('*|wind-end-date|*').dOpt({year: false,month: false,date: false,day: false,minute: false,second: false}).a(','),NP(D('un'), N('vent').n('p'), N('*|wind-direction|*')),VP(V('pouvoir').t('pr'), V('atteindre'), NO(*|wind-max-speed|*), N('km\/h')))"},"max-temperature":{"class":"max-temperature","default":"NP(N('temp\u00e9rature'), N('maximum'), C(':'), N(*|temperature_max|*), P('\u00b0C')).cap(1)"},"avg-temperature":{"class":"avg-temperature","default":"NP(N('temp\u00e9rature'), A('moyen'), C(':'), N(*|temperature-avg|*), P('\u00b0C')).cap(1)"},"min-temperature":{"class":"min-temperature","default":"NP(N('temp\u00e9rature'), N('minimum'), C(':'), N(*|temperature-min|*), P('\u00b0C')).cap(1)"},"temperature":{"class":"temperature","default":"S(DT('*|temperature-date|*').dOpt({year: false, month: false, date: false, day: false, minute: false, second: false}).a(','),S(Pro('je'),VP(V('faire'),NO(*|temperature-value|*),'\u00b0C').t('f')))"},"accumCond":{"class":"accumCond","default":"S(DT('*|accumulation-date|*').dOpt({year: false, day: false, hour: false, minute: false, second: false}).a(','),N('*|accumulation-type|*'), C(':'), NP(NO(*|accumulation-amount|*),N('centim\u00e8tre')).a(','),N('total'), C(':'), NP(NO(*|accumulation-total|*), N('centim\u00e8tre')))"},"percentPrecipCond":{"class":"percentPrecipCond","default":"","alternative":{"probability-precipitation-value":[{"min":0,"max":49,"text":"NP(A('faible'),N('risque'),PP(P('de'),N('pr\u00e9cipitation').n('p')))"},{"min":50,"max":79,"text":"NP(N('possibilit\u00e9'),PP(P('de'),N('pr\u00e9cipitation').n('p')))"},{"min":80,"max":89,"text":"NP(N('pr\u00e9cipitation').n('p'),A('quasi-certain'))"},{"min":90,"max":100,"text":"NP(N('pr\u00e9cipitation').n('p'),V('soutenir').t('pp'))"}]}},"cloudCond":{"class":"cloudCond","default":"","alternative":{"cloud-cover-value":[{"min":0,"max":0,"text":"A('ensoleill\u00e9')"},{"min":1,"max":1,"text":"A('ensoleill\u00e9'),PP(P('avec'),NP(N('passage'),A('nuageux')).n('p'))"},{"min":2,"max":3,"text":"NP(D('un'),N('alternance'),PP(P('de'),CP(C('et'),N('soleil'),PP(P('de'),N('nuage').n('p')))))"},{"min":4,"max":6,"text":"AP(Adv('partiellement'),A('nuageux'))"},{"min":7,"max":8,"text":"AP(Adv('g\u00e9n\u00e9ralement'),A('nuageux'))"},{"min":9,"max":9,"text":"A('nuageux')"},{"min":10,"max":10,"text":"AP(Adv('tr\u00e8s'),A('nuageux'))"}]}}},"en":{"windCond":{"class":"windCond","default":"S(P('from'),DT('*|wind-start-date|*').dOpt({year: false, month: false, date: false, day: false, minute: false, second: false, det:false}),P('to'),DT('*|wind-end-date|*').dOpt({year: false,month: false,date: false,day: false,minute: false,second: false,det: false}).a(','),NP(D('a'), N('wind').n('p'), N('*|wind-direction|*')),VP(V('may').t('ps'), V('reach').t('b'), NO(*|wind-max-speed|*), N('km\/h')))"},"accumCond":{"class":"accumCond","default":"S(DT('*|accumulation-date|*').dOpt({year: false, day: false, hour: false, minute: false, second: false}).a(','),N('*|accumulation-type|*'), C(':'), NP(NO(*|accumulation-amount|*),N('centimeter')).a(','),N('total'), C(':'), NP(NO(*|accumulation-total|*), N('centimeter')))"},"percentPrecipCond":{"class":"percentPrecipCond","default":"","alternative":{"probability-precipitation-value":[{"min":0,"max":49,"text":"NP(A('slight'),N('risk'),PP(P('of'),N('precipitation').n('p')))"},{"min":50,"max":79,"text":"NP(N('risk'),PP(P('of'),N('precipitation').n('p')))"},{"min":80,"max":89,"text":"NP(A('high'),N('risk'),PP(P('of'),N('precipitation').n('p')))"},{"min":90,"max":100,"text":"NP(A('constant'),N('precipitation')).n('p')"}]}},"temperature":{"class":"temperature","default":"S(DT('*|temperature-date|*').dOpt({year: false, month: false, date: false, day: false, minute: false, second: false}).a(','),S(Pro('I').g('n'),VP(V('be'),NO(*|temperature-value|*),'\u00b0C').t('f')))"},"cloudCond":{"class":"cloudCond","default":"","alternative":{"cloud-cover-value":[{"min":0,"max":0,"text":"A('sunny')"},{"min":1,"max":1,"text":"AP(Adv('mainly'),A('sunny'))"},{"min":2,"max":3,"text":"NP(D('a'),N('mix'),PP(P('of'),CP(C('and'),N('sun'),N('cloud'))))"},{"min":4,"max":6,"text":"AP(Adv('partly'),A('cloudy'))"},{"min":7,"max":8,"text":"AP(Adv('mostly'),A('cloudy'))"},{"min":9,"max":9,"text":"V('break').t('pp'),N('sky')"},{"min":10,"max":10,"text":"A('cloudy')"}]}}}}
+{
+	"fr": {
+		"windCond": {
+			"class": "windCond",
+			"default": "S(P('de'),DT('*|wind-start-date|*').dOpt({year: false, month: false, date: false, day: false, minute: false, second: false, det:false}),DT('*|wind-end-date|*').dOpt({year: false,month: false,date: false,day: false,minute: false,second: false}).a(','),NP(D('un'), N('vent').n('p'), N('*|wind-direction|*')),VP(V('pouvoir').t('pr'), V('atteindre'), NO(*|wind-max-speed|*), N('km\/h')))"
+		},
+		"max-temperature": {
+			"class": "max-temperature",
+			"default": "NP(N('temp\u00e9rature'), N('maximum'), C(':'), N(*|temperature_max|*), P('\u00b0C')).cap(1)"
+		},
+		"avg-temperature": {
+			"class": "avg-temperature",
+			"default": "NP(N('temp\u00e9rature'), A('moyen'), C(':'), N(*|temperature-avg|*), P('\u00b0C')).cap(1)"
+		},
+		"min-temperature": {
+			"class": "min-temperature",
+			"default": "NP(N('temp\u00e9rature'), N('minimum'), C(':'), N(*|temperature-min|*), P('\u00b0C')).cap(1)"
+		},
+		"temperature": {
+			"class": "temperature",
+			"default": "S(DT('*|temperature-date|*').dOpt({year: false, month: false, date: false, day: false, minute: false, second: false}).a(','),S(Pro('je'),VP(V('faire'),NO(*|temperature-value|*).tag('span',{'class':'celsius'}),'\u00b0C').t('f')))"
+		},
+		"accumCond": {
+			"class": "accumCond",
+			"default": "S(DT('*|accumulation-date|*').dOpt({year: false, day: false, hour: false, minute: false, second: false}).a(','),N('*|accumulation-type|*'), C(':'), NP(NO(*|accumulation-amount|*),N('centim\u00e8tre')).a(','),N('total'), C(':'), NP(NO(*|accumulation-total|*), N('centim\u00e8tre')))"
+		},
+		"percentPrecipCond": {
+			"class": "percentPrecipCond",
+			"default": "",
+			"alternative": {
+				"probability-precipitation-value": [{
+					"min": 0,
+					"max": 49,
+					"text": "NP(A('faible'),N('risque'),PP(P('de'),N('pr\u00e9cipitation').n('p')))"
+				}, {
+					"min": 50,
+					"max": 79,
+					"text": "NP(N('possibilit\u00e9'),PP(P('de'),N('pr\u00e9cipitation').n('p')))"
+				}, {
+					"min": 80,
+					"max": 89,
+					"text": "NP(N('pr\u00e9cipitation').n('p'),A('quasi-certain'))"
+				}, {
+					"min": 90,
+					"max": 100,
+					"text": "NP(N('pr\u00e9cipitation').n('p'),V('soutenir').t('pp'))"
+				}]
+			}
+		},
+		"cloudCond": {
+			"class": "cloudCond",
+			"default": "",
+			"alternative": {
+				"cloud-cover-value": [{
+					"min": 0,
+					"max": 0,
+					"text": "A('ensoleill\u00e9')"
+				}, {
+					"min": 1,
+					"max": 1,
+					"text": "A('ensoleill\u00e9'),PP(P('avec'),NP(N('passage'),A('nuageux')).n('p'))"
+				}, {
+					"min": 2,
+					"max": 3,
+					"text": "NP(D('un'),N('alternance'),PP(P('de'),CP(C('et'),N('soleil'),PP(P('de'),N('nuage').n('p')))))"
+				}, {
+					"min": 4,
+					"max": 6,
+					"text": "AP(Adv('partiellement'),A('nuageux'))"
+				}, {
+					"min": 7,
+					"max": 8,
+					"text": "AP(Adv('g\u00e9n\u00e9ralement'),A('nuageux'))"
+				}, {
+					"min": 9,
+					"max": 9,
+					"text": "A('nuageux')"
+				}, {
+					"min": 10,
+					"max": 10,
+					"text": "AP(Adv('tr\u00e8s'),A('nuageux'))"
+				}]
+			}
+		}
+	},
+	"en": {
+		"windCond": {
+			"class": "windCond",
+			"default": "S(P('from'),DT('*|wind-start-date|*').dOpt({year: false, month: false, date: false, day: false, minute: false, second: false, det:false}),P('to'),DT('*|wind-end-date|*').dOpt({year: false,month: false,date: false,day: false,minute: false,second: false,det: false}).a(','),NP(D('a'), N('wind').n('p'), N('*|wind-direction|*')),VP(V('may').t('ps'), V('reach').t('b'), NO(*|wind-max-speed|*), N('km\/h')))"
+		},
+		"accumCond": {
+			"class": "accumCond",
+			"default": "S(DT('*|accumulation-date|*').dOpt({year: false, day: false, hour: false, minute: false, second: false}).a(','),N('*|accumulation-type|*'), C(':'), NP(NO(*|accumulation-amount|*),N('centimeter')).a(','),N('total'), C(':'), NP(NO(*|accumulation-total|*), N('centimeter')))"
+		},
+		"percentPrecipCond": {
+			"class": "percentPrecipCond",
+			"default": "",
+			"alternative": {
+				"probability-precipitation-value": [{
+					"min": 0,
+					"max": 49,
+					"text": "NP(A('slight'),N('risk'),PP(P('of'),N('precipitation').n('p')))"
+				}, {
+					"min": 50,
+					"max": 79,
+					"text": "NP(N('risk'),PP(P('of'),N('precipitation').n('p')))"
+				}, {
+					"min": 80,
+					"max": 89,
+					"text": "NP(A('high'),N('risk'),PP(P('of'),N('precipitation').n('p')))"
+				}, {
+					"min": 90,
+					"max": 100,
+					"text": "NP(A('constant'),N('precipitation')).n('p')"
+				}]
+			}
+		},
+		"temperature": {
+			"class": "temperature",
+			"default": "S(DT('*|temperature-date|*').dOpt({year: false, month: false, date: false, day: false, minute: false, second: false}).a(','),S(Pro('I').g('n'),VP(V('be'),NO(*|temperature-value|*).tag('span',{'class':'celsius'}),'\u00b0C').t('f')))"
+		},
+		"cloudCond": {
+			"class": "cloudCond",
+			"default": "",
+			"alternative": {
+				"cloud-cover-value": [{
+					"min": 0,
+					"max": 0,
+					"text": "A('sunny')"
+				}, {
+					"min": 1,
+					"max": 1,
+					"text": "AP(Adv('mainly'),A('sunny'))"
+				}, {
+					"min": 2,
+					"max": 3,
+					"text": "NP(D('a'),N('mix'),PP(P('of'),CP(C('and'),N('sun'),N('cloud'))))"
+				}, {
+					"min": 4,
+					"max": 6,
+					"text": "AP(Adv('partly'),A('cloudy'))"
+				}, {
+					"min": 7,
+					"max": 8,
+					"text": "AP(Adv('mostly'),A('cloudy'))"
+				}, {
+					"min": 9,
+					"max": 9,
+					"text": "V('break').t('pp'),N('sky')"
+				}, {
+					"min": 10,
+					"max": 10,
+					"text": "A('cloudy')"
+				}]
+			}
+		}
+	}
+}

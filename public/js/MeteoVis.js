@@ -300,9 +300,9 @@ $(document).ready(function () {
 //    var regions = (currLang == "fr" ? regionsFr : regionsEn);
 	
 	//Initialisation de la page aux paramètres de l'utilisateur
-	setLanguage(localStorage.getItem('lastLangSelect')==='fr'?'en':'fr', $('#lang'));
+	setLanguage(localStorage.getItem('lastLangSelect'), $('#lang'));
 	//var d = $(this).text();
-    if ( localStorage.getItem('lastDegSelect')=== "°C") {
+    if ( localStorage.getItem('lastDegSelect')=== "°F") {
         fromCelsius();
         $('#degres').text("°C");
     } else {
@@ -378,8 +378,8 @@ $(document).ready(function () {
     $('#inVille').on('typeahead:selected', function (e) {
         var villeSelectionnee = $('#inVille').val();
         //test
-        var currentLang = $('#lang').text()
-        var currentDeg = $('#degres').text()
+        var currentLang = $('#lang').text()=='fr'?'en':'fr';
+        var currentDeg = $('#degres').text()=='°C'?'°F':'°C';
         localStorage.setItem('lastCitySelect',villeSelectionnee)
         localStorage.setItem('lastLangSelect',currentLang)
         localStorage.setItem('lastDegSelect',currentDeg)

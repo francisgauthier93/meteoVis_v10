@@ -65,5 +65,4 @@
             ?>
         </tbody>
     </table>
-    <h5>Last city selected:<span id="lastSelect"></span></h5>
 </div>
