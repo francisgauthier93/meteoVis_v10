@@ -299,30 +299,6 @@ $(document).ready(function () {
 //    var villes = [];
 //    var regions = (currLang == "fr" ? regionsFr : regionsEn);
 	
-	//Initialisation de la page aux paramètres de l'utilisateur
-	setLanguage(localStorage.getItem('lastLangSelect'), $('#lang'));
-	//var d = $(this).text();
-	fromFarenheit();
-    $('#degres').text("°F");
-    
-    if ( localStorage.getItem('lastDegSelect')=== "°F") {
-        fromCelsius();
-        $('#degres').text("°C");
-    } else {
-        fromFarenheit();
-        $('#degres').text("°F");
-    }
-	//
-	//test
-	if(localStorage.getItem('lastCitySelect')!='undefined'){
-		$('#lastSelect').text = localStorage.getItem('lastCitySelect') 
-	}
-	console.log('its called')
-	console.log(localStorage.getItem('lastCitySelect'))
-	console.log(localStorage.getItem('lastLangSelect'))
-	console.log(localStorage.getItem('lastDegSelect'))
-	//
-	
     for (var k in regionsFr)
     {
         citiesFr.push(k);
